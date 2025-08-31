@@ -34,8 +34,8 @@ Detect failed SSH login attempts by analyzing `/var/log/auth.log`.
   - 6 attempts with **invalid password**  
 - Sample log lines:
   ```
-  Aug 31 14:05:12 ubuntu sshd[3124]: Failed password for invalid user wronguser from 127.0.0.1 port 54321 ssh2
-  Aug 31 14:05:15 ubuntu sshd[3126]: Failed password for root from 127.0.0.1 port 54322 ssh2
+  Aug 31 14:05:12 ubuntu sshd[3124]: Failed password for invalid user wronguser from 127.0.0.1 port 60590 ssh2
+  Aug 31 14:05:15 ubuntu sshd[3126]: Failed password for root from 127.0.0.1 port 57872/47660 ssh2
   ```
 - Attack source: `127.0.0.1` (localhost)  
 - Target accounts: `wronguser`, `shaker`  
