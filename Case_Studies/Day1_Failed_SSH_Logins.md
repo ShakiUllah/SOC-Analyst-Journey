@@ -53,7 +53,10 @@ This shows how brute-force attempts can be detected early by analyzing authentic
 ---
 
 ## 📷 Evidence
-- Screenshot of terminal log search  
-- Screenshot of failed SSH login attempts  
+### SSH login attempt (wrong password)
+![SSH attempt](../Screenshots/Day1_ssh_attempt.png)
+
+### Log output showing failed attempts
+![Log output](../Screenshots/Day1_log_output.png)
 
 ---
