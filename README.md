@@ -1,74 +1,46 @@
 # 🛡️ SOC Analyst Journey
 
-Welcome to my **SOC Analyst Journey Repository** 🚀  
-This repo documents my **30-day free SOC Analyst roadmap**, where I practice real-world SOC/Blue Team tasks, build case studies, and share my progress.
+Welcome to my **SOC Analyst Learning Journey** 🚀  
+This repository documents my **daily hands-on practice, investigations, and case studies** as I train to become a SOC Analyst.
+
+---
+
+## 📅 Daily Case Studies
+
+- [Day 1 – Failed Login Attempts (Linux SSH)](Case_Studies/Day1_Failed_Login_Attempts.md)  
+- [Day 2 – Successful vs Failed SSH Logins (Linux)](Case_Studies/Day2_Successful_vs_Failed_Logins.md)  
+- [Day 2 – Successful vs Failed Logins (Windows)](Case_Studies/Day2_Windows_Successful_vs_Failed_Logins.md)  
 
 ---
 
 ## 📂 Repository Structure
-
 ```
 SOC-Analyst-Journey/
-│
-├── README.md
-├── Case_Studies/        # Daily/weekly case studies
-├── Screenshots/         # Screenshots supporting case studies
-├── Detection_Rules/     # Custom Wazuh/Suricata/Snort rules
-├── Queries/             # Detection queries (Splunk, Kibana, Wazuh)
-└── Portfolio/           # Final SOC portfolio + reports
+│── Case_Studies/        # Daily investigation reports
+│   ├── Day1_Failed_Login_Attempts.md
+│   ├── Day2_Successful_vs_Failed_Logins.md
+│── Screenshots/         # Images for each case study
+│── README.md            # Main documentation
 ```
 
 ---
 
-## 📅 Case Studies
-
-### ✅ Week 1 – Log Analysis Basics
-- [Day 1: Failed SSH Login Attempts](Case_Studies/Day1_Failed_SSH_Logins.md)  
-- [Day 2: Successful vs Failed Logins (Linux)](Case_Studies/Day2_Successful_vs_Failed_Logins.md)  
-- [Day 3: Syslog Analysis](Case_Studies/Day3_Syslog_Analysis.md)  
-- Day 4: Windows Process Creation Logs (adapted on Linux)  
-- Day 5: TryHackMe Linux Fundamentals 1  
-- Day 6: TryHackMe Windows Fundamentals 1  
-- Day 7: **Case Study 1 Summary Report**
-
-### 🔎 Week 2 – SIEM & Log Monitoring
-- Day 8: Install Wazuh SIEM  
-- Day 9: Ingest Linux Logs into Wazuh  
-- Day 10: Detect Brute-Force in Wazuh  
-- Day 11: Custom Wazuh Rule (Multiple Failed Logins)  
-- Day 12: TryHackMe Intro to Log Analysis  
-- Day 13: Apache Log Analysis  
-- Day 14: **Case Study 2 Summary Report**
-
-### 🛡️ Week 3 – IDS/IPS & Threat Hunting
-- Day 15: Install Suricata IDS  
-- Day 16: Detect Nmap Scan with Suricata  
-- Day 17: Write Suricata Detection Rules  
-- Day 18: Wireshark HTTP PCAP Analysis  
-- Day 19: TryHackMe Snort Challenge  
-- Day 20: TryHackMe Wireshark 101  
-- Day 21: **Case Study 3 Summary Report**
-
-### 🚨 Week 4 – Incident Response & Portfolio
-- Day 22: SOC Workflow (Alert → Triage → Escalation)  
-- Day 23: Mock Incident (SSH Brute Force Report)  
-- Day 24: Phishing Investigation (LetsDefend)  
-- Day 25: TryHackMe Blue Team Fundamentals  
-- Day 26: Document Detection Queries (Splunk/Wazuh)  
-- Day 27: **Case Study 4 Summary Report**  
-- Day 28–30: Final SOC Portfolio & LinkedIn Showcase  
+## 🎯 Goals of this Journey
+- Practice daily SOC analyst tasks (log analysis, alert investigation, threat hunting).  
+- Build a **public portfolio** to showcase my work to recruiters.  
+- Learn both **Linux and Windows log analysis**.  
+- Document all findings in a professional format.
 
 ---
 
-## 📷 Screenshots
-Supporting screenshots for each case study are stored in the [Screenshots/](Screenshots) folder.  
-
-Example:  
-- `Day1_ssh_attempt.png` → Wrong login attempt  
-- `Day1_log_output.png` → Auth.log showing failed attempts  
+## 📌 Next Steps
+- Add more case studies (Day 3, Day 4, …).  
+- Expand into **Windows Event Log Analysis** once Windows laptop is available.  
+- Integrate **free SOC platforms** like LetsDefend, Forage, and TryHackMe for evening practice.  
 
 ---
 
+<<<<<<< HEAD
 ## ⚙️ Detection Rules
 Custom rules for Wazuh, Suricata, or Snort will be stored in the [Detection_Rules/](Detection_Rules) folder.  
 
@@ -105,5 +77,10 @@ The final **SOC Analyst Portfolio** will be stored in the [Portfolio/](Portfolio
 ## 📢 Connect with Me
 - LinkedIn: [Your LinkedIn Profile](https://www.linkedin.com/in/shakir-ullah-161273377/) 
 - GitHub: [Your GitHub Profile](https://github.com/your-username)  
+=======
+## 🔗 Connect with Me
+- **GitHub Portfolio:** [Your GitHub Profile](https://github.com/)  
+- **LinkedIn:** [Your LinkedIn Profile](https://linkedin.com/)  
+6b31bb6 (Added Day2 Linux + Windows case studies, screenshots, and updated README)
 
 ---
