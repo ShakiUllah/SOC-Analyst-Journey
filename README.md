@@ -10,6 +10,8 @@ This repository documents my **daily hands-on practice, investigations, and case
 - [Day 1 – Failed Login Attempts (Linux SSH)](Case_Studies/Day1_Failed_Login_Attempts.md)  
 - [Day 2 – Successful vs Failed SSH Logins (Linux)](Case_Studies/Day2_Successful_vs_Failed_Logins.md)  
 - [Day 2 – Successful vs Failed Logins (Windows)](Case_Studies/Day2_Windows_Successful_vs_Failed_Logins.md)  
+- [Day 3 – Wazuh SIEM Installation & Exploration](Case_Studies/Day3_Wazuh_SIEM_Installation.md)  
+
 
 ---
 
@@ -40,24 +42,6 @@ SOC-Analyst-Journey/
 
 ---
 
-<<<<<<< HEAD
-## ⚙️ Detection Rules
-Custom rules for Wazuh, Suricata, or Snort will be stored in the [Detection_Rules/](Detection_Rules) folder.  
-
-Example:  
-- `wazuh_failed_login_rule.xml`  
-- `suricata_bruteforce.rules`  
-
----
-
-## 🔎 Detection Queries
-Queries for SIEM tools (Splunk, Kibana, Wazuh) will be stored in the [Queries/](Queries) folder.  
-
-Example:  
-- `splunk_bruteforce_query.spl`  
-- `wazuh_failed_login_query.txt`  
-
----
 
 ## 📑 Portfolio
 The final **SOC Analyst Portfolio** will be stored in the [Portfolio/](Portfolio) folder, including:  
@@ -74,13 +58,10 @@ The final **SOC Analyst Portfolio** will be stored in the [Portfolio/](Portfolio
 
 ---
 
-## 📢 Connect with Me
-- LinkedIn: [Your LinkedIn Profile](https://www.linkedin.com/in/shakir-ullah-161273377/) 
-- GitHub: [Your GitHub Profile](https://github.com/your-username)  
+
 =======
 ## 🔗 Connect with Me
 - **GitHub Portfolio:** [Your GitHub Profile](https://github.com/)  
 - **LinkedIn:** [Your LinkedIn Profile](https://linkedin.com/)  
-6b31bb6 (Added Day2 Linux + Windows case studies, screenshots, and updated README)
 
 ---
