@@ -11,6 +11,7 @@ This repository documents my **daily hands-on practice, investigations, and case
 - [Day 2 – Successful vs Failed SSH Logins (Linux)](Case_Studies/Day2_Successful_vs_Failed_Logins.md)  
 - [Day 2 – Successful vs Failed Logins (Windows)](Case_Studies/Day2_Windows_Successful_vs_Failed_Logins.md)  
 - [Day 3 – Wazuh SIEM Installation & Exploration](Case_Studies/Day3_Wazuh_SIEM_Installation.md)  
+- [Day 4 – Wazuh Local Agent Lab](Case_Studies/Day4_Wazuh_Local_Agent.md)  
 
 
 ---
@@ -21,6 +22,8 @@ SOC-Analyst-Journey/
 │── Case_Studies/        # Daily investigation reports
 │   ├── Day1_Failed_Login_Attempts.md
 │   ├── Day2_Successful_vs_Failed_Logins.md
+│   ├── Day3_Wazuh_SIEM_Installation.md
+│   ├── Day4_Wazuh_Local_Agent.md
 │── Screenshots/         # Images for each case study
 │── README.md            # Main documentation
 ```
@@ -36,9 +39,9 @@ SOC-Analyst-Journey/
 ---
 
 ## 📌 Next Steps
-- Add more case studies (Day 3, Day 4, …).  
-- Expand into **Windows Event Log Analysis** once Windows laptop is available.  
-- Integrate **free SOC platforms** like LetsDefend, Forage, and TryHackMe for evening practice.  
+- Deploy agents on VMs (Windows/Linux).  
+- Expand to network-based monitoring.  
+- Document SOC workflows and detection use cases. 
 
 ---
 
@@ -61,7 +64,7 @@ The final **SOC Analyst Portfolio** will be stored in the [Portfolio/](Portfolio
 
 =======
 ## 🔗 Connect with Me
-- **GitHub Portfolio:** [Your GitHub Profile](https://github.com/)  
-- **LinkedIn:** [Your LinkedIn Profile](https://linkedin.com/)  
+- **GitHub Portfolio:** [Your GitHub Profile](https://github.com/https://github.com/ShakiUllah/)  
+- **LinkedIn:** [Your LinkedIn Profile](https://www.linkedin.com/in/shakir-ullah-161273377/)  
 
 ---
