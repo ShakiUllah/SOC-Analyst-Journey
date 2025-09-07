@@ -64,7 +64,7 @@ The final **SOC Analyst Portfolio** will be stored in the [Portfolio/](Portfolio
 
 =======
 ## 🔗 Connect with Me
-- **GitHub Portfolio:** [Your GitHub Profile](https://github.com/https://github.com/ShakiUllah/)  
+- **GitHub Portfolio:** [Your GitHub Profile](https://github.com/ShakiUllah/)  
 - **LinkedIn:** [Your LinkedIn Profile](https://www.linkedin.com/in/shakir-ullah-161273377/)  
 
 ---
