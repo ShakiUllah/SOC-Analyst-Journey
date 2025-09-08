@@ -18,11 +18,12 @@ This repository documents my **daily hands-on practice, investigations, and case
 ---
 
 ## 📂 Repository Structure
-
+```
 SOC-Analyst-Journey/
 │── Case_Studies/        # Daily investigation reports
 │   ├── Day1_Failed_Login_Attempts.md
 │   ├── Day2_Successful_vs_Failed_Logins.md
+│   ├── Day2_Day2_Windows_Successful_vs_Failed_Logins.md
 │   ├── Day3_Wazuh_SIEM_Installation.md
 │   ├── Day4_Wazuh_Local_Agent.md
 │   ├── Day5_SSH_Brute_Force_Attack.md
