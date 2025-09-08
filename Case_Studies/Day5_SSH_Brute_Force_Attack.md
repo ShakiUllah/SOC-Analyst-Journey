@@ -19,21 +19,21 @@ The exercise was conducted to test the detection capabilities of the Wazuh SIEM 
 
 * **Evidence of Attack:**
     ## 📷 Screenshot
-- ![Attack Simulation](../Screenshots/Day5_Attack Simulation)
+- ![Attack Simulation](../Screenshots/Day5_Attack Simulation)  
 
 **2. Initial Brute-Force Detection:**
 Immediately following the attack, Wazuh began correlating the multiple failed login attempts. This triggered a Level 10 alert **(Rule ID: 5712)** for an "SSHD brute-force attack," indicating a potential security risk.
 
 * **Evidence of Initial Detection:**
  ## 📷 Screenshot
-- ![Brute-Force Detection](../Screenshots/Day5_WAZUH_ALERT)
+- !(../Screenshots/Day5_WAZUH_ALERT)  
 
 **3. Critical Alert - Successful Compromise:**
 [cite_start]At 16:17 PM PKT, Wazuh escalated the event by triggering a Level 12 alert **(Rule ID: 5716)** for "Multiple authentication failures followed by a success." This critical alert confirmed that the simulated attacker's attempts were not only detected but had resulted in a successful login, representing a compromised account.
 
 * **Evidence of Compromise:**
     ## 📷 Screenshot 
-- ![Successful Compromise](../Screenshots/Day5_WAZUH_ALERT2)
+- ![Successful Compromise](../Screenshots/Day5_WAZUH_ALERT2)  
 
 ## Indicators of Compromise (IoCs)
 
