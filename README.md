@@ -11,22 +11,24 @@ This repository documents my **daily hands-on practice, investigations, and case
 - [Day 2 – Successful vs Failed SSH Logins (Linux)](Case_Studies/Day2_Successful_vs_Failed_Logins.md)  
 - [Day 2 – Successful vs Failed Logins (Windows)](Case_Studies/Day2_Windows_Successful_vs_Failed_Logins.md)  
 - [Day 3 – Wazuh SIEM Installation & Exploration](Case_Studies/Day3_Wazuh_SIEM_Installation.md)  
-- [Day 4 – Wazuh Local Agent Lab](Case_Studies/Day4_Wazuh_Local_Agent.md)  
+- [Day 4 – Wazuh Local Agent Lab](Case_Studies/Day4_Wazuh_Local_Agent.md)
+- [Day 5 – SSH Brute-Force Attack & Detection](Case_Studies/Day5_SSH_Brute_Force_Attack.md)  
 
 
 ---
 
 ## 📂 Repository Structure
-```
+
 SOC-Analyst-Journey/
 │── Case_Studies/        # Daily investigation reports
 │   ├── Day1_Failed_Login_Attempts.md
 │   ├── Day2_Successful_vs_Failed_Logins.md
 │   ├── Day3_Wazuh_SIEM_Installation.md
 │   ├── Day4_Wazuh_Local_Agent.md
+│   ├── Day5_SSH_Brute_Force_Attack.md
 │── Screenshots/         # Images for each case study
 │── README.md            # Main documentation
-```
+
 
 ---
 
@@ -61,10 +63,21 @@ The final **SOC Analyst Portfolio** will be stored in the [Portfolio/](Portfolio
 
 ---
 
+## 🛠️ Key Skills & Technologies
+- **SIEM:** Wazuh
+- **IDS/IPS:** Snort, Suricata
+- **Log Analysis:** Linux (`/var/log`), Windows (Event Viewer)
+- **Network Security:** TCP/IP, Packet Analysis (Wireshark)
+- **Threat Simulation:** Hydra
+- **Linux Security:** Command Line, SSH
+- **Windows Security:** Basic Log Analysis
+- **Documentation:** Markdown, Case Study Reporting
 
-=======
+---
+
 ## 🔗 Connect with Me
 - **GitHub Portfolio:** [Your GitHub Profile](https://github.com/ShakiUllah/)  
 - **LinkedIn:** [Your LinkedIn Profile](https://www.linkedin.com/in/shakir-ullah-161273377/)  
 
 ---
+
