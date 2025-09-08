@@ -33,7 +33,7 @@ SOC-Analyst-Journey/
 
 ---
 
-## 🎯 Goals of this Journey
+# 🎯 Goals of this Journey
 - Practice daily SOC analyst tasks (log analysis, alert investigation, threat hunting).  
 - Build a **public portfolio** to showcase my work to recruiters.  
 - Learn both **Linux and Windows log analysis**.  
@@ -41,7 +41,7 @@ SOC-Analyst-Journey/
 
 ---
 
-## 📌 Next Steps
+# 📌 Next Steps
 - Deploy agents on VMs (Windows/Linux).  
 - Expand to network-based monitoring.  
 - Document SOC workflows and detection use cases. 
@@ -49,7 +49,7 @@ SOC-Analyst-Journey/
 ---
 
 
-## 📑 Portfolio
+# 📑 Portfolio
 The final **SOC Analyst Portfolio** will be stored in the [Portfolio/](Portfolio) folder, including:  
 - SOC Portfolio Report (PDF)  
 - Final Case Study Reports (Markdown)  
@@ -57,14 +57,14 @@ The final **SOC Analyst Portfolio** will be stored in the [Portfolio/](Portfolio
 
 ---
 
-## 📌 About This Project
+# 📌 About This Project
 - 🖥️ Focus: SOC Analyst (Blue Team) skills  
 - 🆓 All tools and labs are free (Wazuh, Suricata, Wireshark, TryHackMe free rooms, LetsDefend, Forage internships, Microsoft Learn, Cisco Cybersecurity Essentials).  
 - 📈 Goal: Build a **public portfolio** to demonstrate real SOC skills for entry-level cybersecurity roles.  
 
 ---
 
-## 🛠️ Key Skills & Technologies
+# 🛠️ Key Skills & Technologies
 - **SIEM:** Wazuh
 - **IDS/IPS:** Snort, Suricata
 - **Log Analysis:** Linux (`/var/log`), Windows (Event Viewer)
@@ -76,7 +76,7 @@ The final **SOC Analyst Portfolio** will be stored in the [Portfolio/](Portfolio
 
 ---
 
-## 🔗 Connect with Me
+# 🔗 Connect with Me
 - **GitHub Portfolio:** GitHub Profile: (https://github.com/ShakiUllah/)  
 - **LinkedIn:** LinkedIn Profile: (https://www.linkedin.com/in/shakir-ullah-161273377/)  
 
