@@ -28,7 +28,7 @@ List active agents (notice `000` is the local agent):
 sudo /var/ossec/bin/agent_control -l
 ```
 
-📸 (../Screenshots/Day4_Local_Agent.png)  
+![Local Agent](../Screenshots/Day4_Local_Agent.png)  
 
 ---
 
@@ -75,7 +75,7 @@ Alerts are stored in JSON format:
 sudo tail -f /var/ossec/logs/alerts/alerts.json
 ```
 
-📸 (../Screenshots/Day4_json_file.png)  
+![JSON File Alerts](../Screenshots/Day4_json_file.png)  
 
 ---
 
