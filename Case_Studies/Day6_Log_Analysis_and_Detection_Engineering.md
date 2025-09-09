@@ -4,7 +4,7 @@
 
 ---
 
-[Completed Room](../Screenshots/Day6_completed_room.png)
+- [Completed Room](../Screenshots/Day6_completed_room.png)
 
 ---
 
