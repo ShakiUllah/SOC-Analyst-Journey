@@ -4,7 +4,7 @@
 
 ---
 
-![Completed Room](./screenshots/Day6_completed_room.png)
+[Completed Room](../screenshots/Day6_completed_room.png)
 
 ---
 
@@ -27,8 +27,8 @@ This section focused on the hands-on tools that an analyst uses daily to parse a
 - **CyberChef:** Hands-on practice with the "Cyber Swiss Army Knife" for decoding, deobfuscating, and transforming data from logs into a human-readable format.
 
 *Below is an example of a tool used during the practical exercises:*
-- ![Command Line Log Analysis](./screenshots/Day6_command_line_log_analysis.png)
-- ![CyberChef Example](./screenshots/Day6_cyberchef_analysis.png)
+- ![Command Line Log Analysis](../screenshots/Day6_command_line_log_analysis.png)
+- ![CyberChef Example](../screenshots/Day6_cyberchef_analysis.png)
 
 ---
 
@@ -39,8 +39,8 @@ The most advanced section covered the proactive side of defense: building the de
 - **Sigma:** A deep dive into Sigma, the generic signature format for SIEM systems. This is a critical skill, as it allows defenders to write one detection rule that can be translated to work on any platform (Wazuh, Splunk, QRadar, etc.).
 
 *Below is an example of a detection rule discussed in the room:*
-- ![Sigma Rule Example](./screenshots/Day6_sigma_rule.png)
-- ![Yara Rule Example](./screenshots/Day6_yara_rule.png)
+- ![Sigma Rule Example](../screenshots/Day6_sigma_rule.png)
+- ![Yara Rule Example](../screenshots/Day6_yara_rule.png)
 ---
 
 ## My Key Takeaways
