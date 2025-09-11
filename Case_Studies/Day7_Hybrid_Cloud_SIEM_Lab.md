@@ -27,7 +27,7 @@ The host system’s **Secure Boot** policy prevented unsigned kernel modules fro
 
 ➡️ Outcome: Forced pivot away from local virtualization.  
 
-*_ VMware kernel module error screenshot_*  
+*_(VMware kernel module error screenshot)_*  
 - ![VMware kernel module error screenshot](../Screenshots/Day7_VMware_Error.png)  
 
 ---
@@ -56,7 +56,7 @@ Architecture diagram:
 
 ✅ Verification: The `codespace-vm` endpoint checked in and appeared as **Active** in the Wazuh Dashboard.  
 
-*_(Screenshot of active agent in dashboard)_*  
+*_(Active agent in dashboard)_*  
 - ![Active agent in dashboard](../Screenshots/Day7_Active_agent2.png) 
 - ![Active agent in dashboard](../Screenshots/Day7_Active_agent.png)
 
