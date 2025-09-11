@@ -1,5 +1,7 @@
 # 🚀 Project Write‑up: Building a Hybrid‑Cloud SIEM Lab
 
+- ![Hybrid‑Cloud SIEM](../Screenshots/Day7_HybridCloud.png)  
+
 This document describes the engineering and troubleshooting journey of building a **hybrid‑cloud security monitoring lab** using **Wazuh SIEM**.  
 What started as a simple local setup evolved into a real‑world scenario that required advanced troubleshooting, pivoting between tools, and ultimately creating a hybrid solution.  
 
