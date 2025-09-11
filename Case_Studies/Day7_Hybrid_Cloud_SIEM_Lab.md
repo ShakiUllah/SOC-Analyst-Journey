@@ -57,8 +57,8 @@ Architecture diagram:
 ✅ Verification: The `codespace-vm` endpoint checked in and appeared as **Active** in the Wazuh Dashboard.  
 
 *_(Screenshot of active agent in dashboard)_*  
-- ![Active agent in dashboard](../Screenshots/Day7_Active_agent.png) 
-- ![Active agent in dashboard](../Screenshots/Day7_Active_agent2.png)
+- ![Active agent in dashboard](../Screenshots/Day7_Active_agent2.png) 
+- ![Active agent in dashboard](../Screenshots/Day7_Active_agent.png)
 
 ---
 
