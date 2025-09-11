@@ -9,7 +9,7 @@ This repository documents my **daily hands-on practice, investigations, and case
 
 | Day | Title | Link |
 |-----|-----------------------------|-------------------------------------------------------------|
-| 1   | Failed Login Attempts (Linux SSH) | [View Report](Case_Studies/Day1_Failed_SSH_Logins_Attempts.md) |
+| 1   | Failed Login Attempts (Linux SSH) | [View Report](Case_Studies/Day1_Failed_SSH_Logins.md) |
 | 2   | Successful vs Failed SSH Logins (Linux) | [View Report](Case_Studies/Day2_Successful_vs_Failed_Logins.md) |
 | 2   | Successful vs Failed Logins (Windows) | [View Report](Case_Studies/Day2_Windows_Successful_vs_Failed_Logins.md) |
 | 3   | Wazuh SIEM Installation & Exploration | [View Report](Case_Studies/Day3_Wazuh_SIEM_Installation.md) |
