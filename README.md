@@ -48,9 +48,12 @@ SOC-Analyst-Journey/
 ---
 
 ## 📌 Next Steps
-- Deploy agents on VMs (Windows/Linux).  
-- Expand to network-based monitoring.  
-- Document SOC workflows and detection use cases. 
+- Complete the official **Splunk Fundamentals 1** free training course.
+- Practice Splunk's Search Processing Language (SPL) in the hands-on rooms on **TryHackMe**.
+- Begin the **Mastercard Cybersecurity Job Simulation on Forage** to practice real-world analyst workflows.
+- Continue expanding the hybrid-cloud lab with new detection rules and scenarios.
+- Learn the basics of writing **Sigma rules** for cross-platform threat detection.
+
 
 ---
 
