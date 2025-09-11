@@ -25,7 +25,7 @@ The host system’s **Secure Boot** policy prevented unsigned kernel modules fro
 
 ➡️ Outcome: Forced pivot away from local virtualization.  
 
-*_(Example: VMware kernel module error screenshot)_*  
+*_ VMware kernel module error screenshot_*  
 - ![VMware kernel module error screenshot](../Screenshots/Day7_VMware_Error.png)  
 
 ---
