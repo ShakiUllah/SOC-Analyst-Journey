@@ -16,8 +16,19 @@ This repository documents my **daily hands-on practice, investigations, and case
 | 4   | Wazuh Local Agent Lab | [View Report](Case_Studies/Day4_Wazuh_Local_Agent.md) |
 | 5   | SSH Brute-Force Attack & Detection | [View Report](Case_Studies/Day5_SSH_Brute_Force_Attack.md) |
 | 6   | Log Analysis and Detection Engineering TryHackMe | [View Report](Case_Studies/Day6_Log_Analysis_and_Detection_Engineering.md)
-| 7   | Building a Hybrid‑Cloud SIEM Lab | [View Report](Case_Studies/Day7_Hybrid_Cloud_SIEM_Lab.md)
-|
+| 7   | Project: Hybrid-Cloud SIEM Lab Setup | [View Report](Case_Studies/Day7_Hybrid_Cloud_SIEM_Lab.md)
+| 8   | Mastercard Cybersecurity Virtual Experience Program (Forage) | [View Report](Case_Studies/Day8_Forage_Mastercard_Cybersecurity_Simulation.md)
+
+
+
+---
+
+## 🏆 Virtual Internships & Job Simulations
+
+- **Mastercard Cybersecurity Virtual Experience Program (Forage)** - *Completed September 2025*
+  - Tasks included phishing analysis and creating security awareness training materials.
+
+
 
 ---
 
@@ -33,6 +44,7 @@ SOC-Analyst-Journey/
 │   ├── Day5_SSH_Brute_Force_Attack.md
 │   ├── Day6_Log_Analysis_and-Detection_Engineering.md
 │   ├── Day7_Hybrid_Cloud_SIEM_Lab.md
+│   ├── Day8_Forage_Mastercard_Cybersecurity_Simulation.md
 │── Screenshots/         # Images for each case study
 │── README.md            # Main documentation
 ```
