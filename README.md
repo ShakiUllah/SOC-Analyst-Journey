@@ -18,6 +18,7 @@ This repository documents my **daily hands-on practice, investigations, and case
 | 6   | Log Analysis and Detection Engineering TryHackMe | [View Report](Case_Studies/Day6_Log_Analysis_and_Detection_Engineering.md)
 | 7   | Project: Hybrid-Cloud SIEM Lab Setup | [View Report](Case_Studies/Day7_Hybrid_Cloud_SIEM_Lab.md)
 | 8   | Mastercard Cybersecurity Virtual Experience Program (Forage) | [View Report](Case_Studies/Day8_Forage_Mastercard_Cybersecurity_Simulation.md)
+| 9   | Windows Forensics 1 TryHackMe | [View Report](Case_Studies/Day9_Windows_Forensics_1_TryHackMe.md)
 
 
 
@@ -45,6 +46,7 @@ SOC-Analyst-Journey/
 │   ├── Day6_Log_Analysis_and-Detection_Engineering.md
 │   ├── Day7_Hybrid_Cloud_SIEM_Lab.md
 │   ├── Day8_Forage_Mastercard_Cybersecurity_Simulation.md
+│   ├── Day9_Windows_Forensics_1_TryHackMe.md
 │── Screenshots/         # Images for each case study
 │── README.md            # Main documentation
 ```
