@@ -29,9 +29,9 @@ The core of the room was a detailed exploration of specific registry hives to un
 The room culminated in a final hands-on challenge. I was provided with a set of acquired registry hives from a simulated case and was required to use the techniques learned to conduct a full investigation. This involved extracting specific pieces of evidence to answer questions about the user's actions, the programs they ran, and any external devices they connected, solidifying the practical application of the concepts.
 
 *Evidence of Completed Challenge:*
-- [](../Screenshots/Day9_WIN4N6.png)
-- [](../Screenshots/Day9_WIN4N62.png)
-- [](../Screenshots/Day9_WIN4N63.png)
+- [!](../Screenshots/Day9_WIN4N6.png)
+- [!](../Screenshots/Day9_WIN4N62.png)
+- [!](../Screenshots/Day9_WIN4N63.png)
 
 ---
 
