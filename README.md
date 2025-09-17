@@ -19,7 +19,7 @@ This repository documents my **daily hands-on practice, investigations, and case
 | 7   | Project: Hybrid-Cloud SIEM Lab Setup | [View Report](Case_Studies/Day7_Hybrid_Cloud_SIEM_Lab.md)
 | 8   | Mastercard Cybersecurity Virtual Experience Program (Forage) | [View Report](Case_Studies/Day8_Forage_Mastercard_Cybersecurity_Simulation.md)
 | 9   | Windows Forensics 1 TryHackMe | [View Report](Case_Studies/Day9_Windows_Forensics_1_TryHackMe.md)
-
+| 10   | Project: Advanced Wazuh Rule & Decoder Development | [View Report](Case_Studies/Day10_Project_Wazuh_Custom_Rule_Development.md)
 
 
 ---
@@ -47,6 +47,7 @@ SOC-Analyst-Journey/
 │   ├── Day7_Hybrid_Cloud_SIEM_Lab.md
 │   ├── Day8_Forage_Mastercard_Cybersecurity_Simulation.md
 │   ├── Day9_Windows_Forensics_1_TryHackMe.md
+│   ├── Day10_Project_Wazuh_Custom_Rule_Development.md
 │── Screenshots/         # Images for each case study
 │── README.md            # Main documentation
 ```
