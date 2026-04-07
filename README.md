@@ -20,6 +20,7 @@ This repository documents my **daily hands-on practice, investigations, and case
 | 8   | Mastercard Cybersecurity Virtual Experience Program (Forage) | [View Report](Case_Studies/Day8_Forage_Mastercard_Cybersecurity_Simulation.md)
 | 9   | Windows Forensics 1 TryHackMe | [View Report](Case_Studies/Day9_Windows_Forensics_1_TryHackMe.md)
 | 10   | Project: Advanced Wazuh Rule & Decoder Development | [View Report](Case_Studies/Day10_Project_Wazuh_Custom_Rule_Development.md)
+| 11   | Splunk Fundamentals (LetsDefend) [View Report] | (Case_Studies/Day11_Splunk_Fundamentals_LetsDefend.md)
 
 
 ---
