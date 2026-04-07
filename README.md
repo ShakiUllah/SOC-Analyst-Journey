@@ -48,6 +48,7 @@ SOC-Analyst-Journey/
 │   ├── Day8_Forage_Mastercard_Cybersecurity_Simulation.md
 │   ├── Day9_Windows_Forensics_1_TryHackMe.md
 │   ├── Day10_Project_Wazuh_Custom_Rule_Development.md
+│   ├── Day11_Splunk_Fundamentals_LetsDefend.md  
 │── Screenshots/         # Images for each case study
 │── README.md            # Main documentation
 ```
