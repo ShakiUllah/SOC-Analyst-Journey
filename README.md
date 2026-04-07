@@ -10,15 +10,15 @@ This repository documents my **daily hands-on practice, investigations, and case
 | Day | Title | Link |
 |-----|-----------------------------|-------------------------------------------------------------|
 | 1   | Failed Login Attempts (Linux SSH) | [View Report](Case_Studies/Day01_Failed_SSH_Logins.md) |
-| 2   | Successful vs Failed SSH Logins (Linux) | [View Report](Case_Studies/Day2_Successful_vs_Failed_Logins.md) |
-| 2   | Successful vs Failed Logins (Windows) | [View Report](Case_Studies/Day2_Windows_Successful_vs_Failed_Logins.md) |
-| 3   | Wazuh SIEM Installation & Exploration | [View Report](Case_Studies/Day3_Wazuh_SIEM_Installation.md) |
-| 4   | Wazuh Local Agent Lab | [View Report](Case_Studies/Day4_Wazuh_Local_Agent.md) |
-| 5   | SSH Brute-Force Attack & Detection | [View Report](Case_Studies/Day5_SSH_Brute_Force_Attack.md) |
-| 6   | Log Analysis and Detection Engineering TryHackMe | [View Report](Case_Studies/Day6_Log_Analysis_and_Detection_Engineering.md)
-| 7   | Project: Hybrid-Cloud SIEM Lab Setup | [View Report](Case_Studies/Day7_Hybrid_Cloud_SIEM_Lab.md)
-| 8   | Mastercard Cybersecurity Virtual Experience Program (Forage) | [View Report](Case_Studies/Day8_Forage_Mastercard_Cybersecurity_Simulation.md)
-| 9   | Windows Forensics 1 TryHackMe | [View Report](Case_Studies/Day9_Windows_Forensics_1_TryHackMe.md)
+| 2   | Successful vs Failed SSH Logins (Linux) | [View Report](Case_Studies/Day02_Successful_vs_Failed_Logins.md) |
+| 2   | Successful vs Failed Logins (Windows) | [View Report](Case_Studies/Day02_Windows_Successful_vs_Failed_Logins.md) |
+| 3   | Wazuh SIEM Installation & Exploration | [View Report](Case_Studies/Day03_Wazuh_SIEM_Installation.md) |
+| 4   | Wazuh Local Agent Lab | [View Report](Case_Studies/Day04_Wazuh_Local_Agent.md) |
+| 5   | SSH Brute-Force Attack & Detection | [View Report](Case_Studies/Day05_SSH_Brute_Force_Attack.md) |
+| 6   | Log Analysis and Detection Engineering TryHackMe | [View Report](Case_Studies/Day06_Log_Analysis_and_Detection_Engineering.md)
+| 7   | Project: Hybrid-Cloud SIEM Lab Setup | [View Report](Case_Studies/Day07_Hybrid_Cloud_SIEM_Lab.md)
+| 8   | Mastercard Cybersecurity Virtual Experience Program (Forage) | [View Report](Case_Studies/Day08_Forage_Mastercard_Cybersecurity_Simulation.md)
+| 9   | Windows Forensics 1 TryHackMe | [View Report](Case_Studies/Day09_Windows_Forensics_1_TryHackMe.md)
 | 10   | Project: Advanced Wazuh Rule & Decoder Development | [View Report](Case_Studies/Day10_Project_Wazuh_Custom_Rule_Development.md)
 | 11   | Splunk Fundamentals (LetsDefend) | [View Report](Case_Studies/Day11_Splunk_Fundamentals_LetsDefend.md)
 
@@ -40,15 +40,15 @@ This repository documents my **daily hands-on practice, investigations, and case
 SOC-Analyst-Journey/
 │── Case_Studies/        # Daily investigation reports
 │   ├── Day01_Failed_Login_Attempts.md
-│   ├── Day2_Successful_vs_Failed_Logins.md
-│   ├── Day2_Windows_Successful_vs_Failed_Logins.md
-│   ├── Day3_Wazuh_SIEM_Installation.md
-│   ├── Day4_Wazuh_Local_Agent.md
-│   ├── Day5_SSH_Brute_Force_Attack.md
-│   ├── Day6_Log_Analysis_and-Detection_Engineering.md
-│   ├── Day7_Hybrid_Cloud_SIEM_Lab.md
-│   ├── Day8_Forage_Mastercard_Cybersecurity_Simulation.md
-│   ├── Day9_Windows_Forensics_1_TryHackMe.md
+│   ├── Day02_Successful_vs_Failed_Logins.md
+│   ├── Day02_Windows_Successful_vs_Failed_Logins.md
+│   ├── Day03_Wazuh_SIEM_Installation.md
+│   ├── Day04_Wazuh_Local_Agent.md
+│   ├── Day05_SSH_Brute_Force_Attack.md
+│   ├── Day06_Log_Analysis_and-Detection_Engineering.md
+│   ├── Day07_Hybrid_Cloud_SIEM_Lab.md
+│   ├── Day08_Forage_Mastercard_Cybersecurity_Simulation.md
+│   ├── Day09_Windows_Forensics_1_TryHackMe.md
 │   ├── Day10_Project_Wazuh_Custom_Rule_Development.md
 │   ├── Day11_Splunk_Fundamentals_LetsDefend.md  
 │── Screenshots/         # Images for each case study
