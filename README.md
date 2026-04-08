@@ -21,6 +21,7 @@ This repository documents my **daily hands-on practice, investigations, and case
 | 9   | Windows Forensics 1 TryHackMe | [View Report](Case_Studies/Day09_Windows_Forensics_1_TryHackMe.md)
 | 10   | Project: Advanced Wazuh Rule & Decoder Development | [View Report](Case_Studies/Day10_Project_Wazuh_Custom_Rule_Development.md)
 | 11   | Splunk Fundamentals (LetsDefend) | [View Report](Case_Studies/Day11_Splunk_Fundamentals_LetsDefend.md)
+| 12   | BTLO: Network Analysis (Ransomware) & Log Analysis (Privilege Escalation) | [View Report](Case_Studies/Day12_BTLO_Network_and_Log_Analysis.md)
 
 
 
@@ -51,6 +52,7 @@ SOC-Analyst-Journey/
 │   ├── Day09_Windows_Forensics_1_TryHackMe.md
 │   ├── Day10_Project_Wazuh_Custom_Rule_Development.md
 │   ├── Day11_Splunk_Fundamentals_LetsDefend.md  
+│   ├── Day12_BTLO_Network_and_Log_Analysis.md
 │── Screenshots/         # Images for each case study
 │── README.md            # Main documentation
 ```
