@@ -23,6 +23,7 @@ This repository documents my **daily hands-on practice, investigations, and case
 | 11   | Splunk Fundamentals (LetsDefend) | [View Report](Case_Studies/Day11_Splunk_Fundamentals_LetsDefend.md)
 | 12   | BTLO: Network Analysis (Ransomware) & Log Analysis (Privilege Escalation) | [View Report](Case_Studies/Day12_BTLO_Network_and_Log_Analysis.md)
 | 13   | BTLO: Memory Analysis (Ransomware) & Phishing Analysis | [View Report](Case_Studies/Day13_Memory_Analysis_and_Phishing_Analysis.md)
+| 14   | Suricata IDS Setup & Custom Rule Writing | [View Report](Case_Studies/Day14_Suricata_IDS_Custom_Rules.md)
 
 
 
@@ -55,6 +56,7 @@ SOC-Analyst-Journey/
 │   ├── Day11_Splunk_Fundamentals_LetsDefend.md  
 │   ├── Day12_BTLO_Network_and_Log_Analysis.md
 │   ├── Day13_Memory_Analysis_and_Phishing_Analysis.md
+│   ├── Day14_Suricata_IDS_Custom_Rules.md
 │── Screenshots/         # Images for each case study
 │── README.md            # Main documentation
 ```
