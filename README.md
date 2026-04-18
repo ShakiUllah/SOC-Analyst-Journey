@@ -26,6 +26,7 @@ This repository documents my **daily hands-on practice, investigations, and case
 | 14   | Suricata IDS Setup & Custom Rule Writing | [View Report](Case_Studies/Day14_Suricata_IDS_Custom_Rules.md)
 | 15   | Phishing Email Analysis & IOC Extraction | [View Report](Case_Studies/Day15_Phishing_Email_Analysis.md)
 | 16   | Detecting Web Attacks & Log Analysis: Compromised WordPress | [View Report](Case_Studies/Day16_Detecting_Web_Attacks.md)
+| 17   | SIEM 101, VirusTotal & Log Analysis: Sysmon | [View Report](Case_Studies/Day17_SIEM_VirusTotal_Sysmon.md)
 
 
 
@@ -62,6 +63,7 @@ SOC-Analyst-Journey/
 │   ├── Day14_Suricata_IDS_Custom_Rules.md
 │   ├── Day15_Phishing_Email_Analysis.md
 │   ├── Day16_Detecting_Web_Attacks.md
+│   ├── Day17_SIEM_VirusTotal_Sysmon.md
 │── Screenshots/         # Images for each case study
 │── README.md            # Main documentation
 ```
