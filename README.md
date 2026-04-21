@@ -28,6 +28,8 @@ This repository documents my **daily hands-on practice, investigations, and case
 | 16   | Detecting Web Attacks & Log Analysis: Compromised WordPress | [View Report](Case_Studies/Day16_Detecting_Web_Attacks.md)
 | 17   | SIEM 101, VirusTotal & Log Analysis: Sysmon | [View Report](Case_Studies/Day17_SIEM_VirusTotal_Sysmon.md)
 | 18   | Malware Analysis Fundamentals + BTLO: Secure Shell (HARD) | [View Report](Case_Studies/Day18_Malware_Analysis_Fundamentals_and_BTLO_Secure_Shell.md)
+| 18   | SOC Analyst Journey | Cyber Threat Intelligence + MITRE ATT&CK Mapping | [View Report](Case_Studies/Day19_Threat_Intelligence_and_MITRE_ATTaCK_Mapping.md)
+
 
 
 
@@ -66,6 +68,7 @@ SOC-Analyst-Journey/
 │   ├── Day16_Detecting_Web_Attacks.md
 │   ├── Day17_SIEM_VirusTotal_Sysmon.md
 │   ├── Day18_Malware_Analysis_Fundamentals_and_BTLO_Secure_Shell.md
+│   ├── Day19_Threat_Intelligence_and_MITRE_ATTaCK_Mapping.md
 │── Screenshots/         # Images for each case study
 │── README.md            # Main documentation
 ```
