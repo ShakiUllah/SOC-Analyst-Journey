@@ -75,26 +75,26 @@ Break into cybersecurity as a **Tier 1 SOC Analyst** by building a real, verifia
 
 | Day | Topic | Platform | BTLO Pts | Key Tools |
 |-----|-------|----------|----------|-----------|
-| [01](Case_Studies/Day01_Failed_SSH_Logins.md) | Failed Login Attempts (Linux SSH) | Local | — | grep, /var/log |
-| [02](Case_Studies/Day02_Successful_vs_Failed_Logins.md) | Successful vs Failed SSH Logins (Linux) | Local | — | grep, awk |
-| [02b](Case_Studies/Day02_Windows_Successful_vs_Failed_Logins.md) | Successful vs Failed Logins (Windows) | Local | — | Event Viewer |
-| [03](Case_Studies/Day03_Wazuh_SIEM_Installation.md) | Wazuh SIEM Installation & Exploration | Local | — | Wazuh |
-| [04](Case_Studies/Day04_Wazuh_Local_Agent.md) | Wazuh Local Agent Lab | Local | — | Wazuh |
-| [05](Case_Studies/Day05_SSH_Brute_Force_Attack.md) | SSH Brute-Force Attack & Detection | Local | — | Hydra, Wazuh |
-| [06](Case_Studies/Day06_Log_Analysis_and_Detection_Engineering.md) | Log Analysis & Detection Engineering | TryHackMe | — | grep, awk |
-| [07](Case_Studies/Day07_Hybrid_Cloud_SIEM_Lab.md) | Hybrid-Cloud SIEM Lab Setup | Local | — | Wazuh |
-| [08](Case_Studies/Day08_Forage_Mastercard_Cybersecurity_Simulation.md) | Mastercard Cybersecurity Simulation | Forage | — | Phishing Analysis |
-| [09](Case_Studies/Day09_Windows_Forensics_1_TryHackMe.md) | Windows Forensics 1 | TryHackMe | — | Registry, Autopsy |
-| [10](Case_Studies/Day10_Project_Wazuh_Custom_Rule_Development.md) | Advanced Wazuh Rule & Decoder Development | Local | — | Wazuh |
-| [11](Case_Studies/Day11_Splunk_Fundamentals_LetsDefend.md) | Splunk Fundamentals | LetsDefend | — | Splunk, SPL |
-| [12](Case_Studies/Day12_BTLO_Network_and_Log_Analysis.md) | BTLO: Network Analysis Ransomware + Log Analysis Privilege Escalation | BTLO | 30pts | Wireshark, grep |
-| [13](Case_Studies/Day13_Memory_Analysis_and_Phishing_Analysis.md) | BTLO: Memory Analysis WannaCry + Phishing Analysis | BTLO | 30pts | Volatility, Thunderbird |
-| [14](Case_Studies/Day14_Suricata_IDS_Custom_Rules.md) | Suricata IDS Setup & Custom Rule Writing + Wazuh Integration | Local | — | Suricata, Wazuh |
-| [15](Case_Studies/Day15_Phishing_Email_Analysis.md) | Phishing Email Analysis 2 + IOC Extraction | BTLO + LetsDefend | 10pts | CyberChef, VirusTotal |
-| [16](Case_Studies/Day16_Detecting_Web_Attacks.md) | Detecting Web Attacks + Log Analysis: Compromised WordPress | LetsDefend + BTLO | 20pts | WPScan, SQLmap logs |
-| [17](Case_Studies/Day17_SIEM_VirusTotal_Sysmon.md) | SIEM 101 + VirusTotal + SIEM Alert Investigation + Sysmon Log Analysis | LetsDefend + BTLO | 20pts | Wazuh, Sysmon |
-| [18](Case_Studies/Day18_Malware_Analysis_Fundamentals_and_BTLO_Secure_Shell.md) | Malware Analysis Fundamentals + BTLO: Secure Shell (HARD) | LetsDefend + BTLO | 30pts | AnyRun, CyberChef, grep |
-| [19](Case_Studies/Day19_Threat_Intelligence_and_MITRE_ATTaCK_Mapping.md) | Cyber Threat Intelligence + MITRE ATT&CK Mapping | LetsDefend + BTLO | 10pts | ATT&CK Navigator |
+| 01 | [Failed Login Attempts (Linux SSH)](Case_Studies/Day01_Failed_SSH_Logins.md) | Local | — | grep, /var/log |
+| 02 | [Successful vs Failed SSH Logins (Linux)](Case_Studies/Day02_Successful_vs_Failed_Logins.md) | Local | — | grep, awk |
+| 02b | [Successful vs Failed Logins (Windows)](Case_Studies/Day02_Windows_Successful_vs_Failed_Logins.md) | Local | — | Event Viewer |
+| 03 | [Wazuh SIEM Installation & Exploration](Case_Studies/Day03_Wazuh_SIEM_Installation.md) | Local | — | Wazuh |
+| 04 | [Wazuh Local Agent Lab](Case_Studies/Day04_Wazuh_Local_Agent.md) | Local | — | Wazuh |
+| 05 | [SSH Brute-Force Attack & Detection](Case_Studies/Day05_SSH_Brute_Force_Attack.md) | Local | — | Hydra, Wazuh |
+| 06 | [Log Analysis & Detection Engineering](Case_Studies/Day06_Log_Analysis_and_Detection_Engineering.md) | TryHackMe | — | grep, awk |
+| 07 | [Hybrid-Cloud SIEM Lab Setup](Case_Studies/Day07_Hybrid_Cloud_SIEM_Lab.md) | Local | — | Wazuh |
+| 08 | [Mastercard Cybersecurity Simulation](Case_Studies/Day08_Forage_Mastercard_Cybersecurity_Simulation.md) | Forage | — | Phishing Analysis |
+| 09 | [Windows Forensics 1](Case_Studies/Day09_Windows_Forensics_1_TryHackMe.md) | TryHackMe | — | Registry, Autopsy |
+| 10 | [Advanced Wazuh Rule & Decoder Development](Case_Studies/Day10_Project_Wazuh_Custom_Rule_Development.md) | Local | — | Wazuh |
+| 11 | [Splunk Fundamentals](Case_Studies/Day11_Splunk_Fundamentals_LetsDefend.md) | LetsDefend | — | Splunk, SPL |
+| 12 | [BTLO: Network Analysis Ransomware + Log Analysis Privilege Escalation](Case_Studies/Day12_BTLO_Network_and_Log_Analysis.md) | BTLO | 30pts | Wireshark, grep |
+| 13 | [BTLO: Memory Analysis WannaCry + Phishing Analysis](Case_Studies/Day13_Memory_Analysis_and_Phishing_Analysis.md) | BTLO | 30pts | Volatility, Thunderbird |
+| 14 | [Suricata IDS Setup & Custom Rule Writing + Wazuh Integration](Case_Studies/Day14_Suricata_IDS_Custom_Rules.md) | Local | — | Suricata, Wazuh |
+| 15 | [Phishing Email Analysis 2 + IOC Extraction](Case_Studies/Day15_Phishing_Email_Analysis.md) | BTLO + LetsDefend | 10pts | CyberChef, VirusTotal |
+| 16 | [Detecting Web Attacks + Log Analysis: Compromised WordPress](Case_Studies/Day16_Detecting_Web_Attacks.md) | LetsDefend + BTLO | 20pts | WPScan, SQLmap logs |
+| 17 | [SIEM 101 + VirusTotal + SIEM Alert Investigation + Sysmon Log Analysis](Case_Studies/Day17_SIEM_VirusTotal_Sysmon.md) | LetsDefend + BTLO | 20pts | Wazuh, Sysmon |
+| 18 | [Malware Analysis Fundamentals + BTLO: Secure Shell (HARD)](Case_Studies/Day18_Malware_Analysis_Fundamentals_and_BTLO_Secure_Shell.md) | LetsDefend + BTLO | 30pts | AnyRun, CyberChef, grep |
+| 19 | [Cyber Threat Intelligence + MITRE ATT&CK Mapping](Case_Studies/Day19_Threat_Intelligence_and_MITRE_ATTaCK_Mapping.md) | LetsDefend + BTLO | 10pts | ATT&CK Navigator |
 
 ### 📅 Upcoming (Days 20–30)
 
@@ -140,8 +140,8 @@ Techniques encountered and documented across my 30-day journey:
 
 ```
 SOC-Analyst-Journey/
-├── README.md                          ← You are here
-├── Case_Studies/                      ← Daily write-ups (Markdown)
+├── README.md
+├── Case_Studies/
 │   ├── Day01_Failed_SSH_Logins.md
 │   ├── Day02_Successful_vs_Failed_Logins.md
 │   ├── Day02_Windows_Successful_vs_Failed_Logins.md
@@ -162,8 +162,8 @@ SOC-Analyst-Journey/
 │   ├── Day17_SIEM_VirusTotal_Sysmon.md
 │   ├── Day18_Malware_Analysis_Fundamentals_and_BTLO_Secure_Shell.md
 │   └── Day19_Threat_Intelligence_and_MITRE_ATTaCK_Mapping.md
-├── Screenshots/                       ← All evidence screenshots (DayXX_name.png)
-└── Portfolio/                         ← Final PDF portfolio (Day 27)
+├── Screenshots/
+└── Portfolio/
 ```
 
 ---
