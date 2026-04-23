@@ -70,7 +70,7 @@ Break into cybersecurity as a **Tier 1 SOC Analyst** by building a real, verifia
 
 | Day | Topic | Platform | BTLO Pts | Key Tools |
 |-----|-------|----------|----------|-----------|
-[| 01 | [Failed Login Attempts (Linux SSH)](Case_Studies/Day01_Failed_SSH_Logins.md) | Local | — | grep, /var/log |
+| [01 | Failed Login Attempts (Linux SSH)](Case_Studies/Day01_Failed_SSH_Logins.md) | Local | — | grep, /var/log |
 | 02 | [Successful vs Failed SSH Logins (Linux)](Case_Studies/Day02_Successful_vs_Failed_Logins.md) | Local | — | grep, awk |
 | 02b | [Successful vs Failed Logins (Windows)](Case_Studies/Day02_Windows_Successful_vs_Failed_Logins.md) | Local | — | Event Viewer |
 | 03 | [Wazuh SIEM Installation & Exploration](Case_Studies/Day03_Wazuh_SIEM_Installation.md) | Local | — | Wazuh |
