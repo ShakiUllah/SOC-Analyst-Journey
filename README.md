@@ -10,16 +10,6 @@
 
 [![Cost](https://img.shields.io/badge/Cost-100%25%20Free-success)](https://github.com/ShakiUllah/SOC-Analyst-Journey)
 
-[![GitHub last commit](https://img.shields.io/github/last-commit/ShakiUllah/SOC-Analyst-Journey)](https://github.com/ShakiUllah/SOC-Analyst-Journey/commits/main)[![Progress](https://img.shields.io/badge/Progress-20%2F30%20Days-blue)](https://github.com/ShakiUllah/SOC-Analyst-Journey)
-
-[![BTLO Points](https://img.shields.io/badge/BTLO-150%2B%20Points-brightgreen)](https://blueteamlabs.online)
-
-[![LetsDefend Badges](https://img.shields.io/badge/LetsDefend-7%20Badges-purple)](https://app.letsdefend.io)
-
-[![Platform](https://img.shields.io/badge/Platform-Ubuntu%2024-orange)](https://github.com/ShakiUllah/SOC-Analyst-Journey)
-
-[![Cost](https://img.shields.io/badge/Cost-100%25%20Free-success)](https://github.com/ShakiUllah/SOC-Analyst-Journey)
-
 [![GitHub last commit](https://img.shields.io/github/last-commit/ShakiUllah/SOC-Analyst-Journey)](https://github.com/ShakiUllah/SOC-Analyst-Journey/commits/main)
 
 ---
