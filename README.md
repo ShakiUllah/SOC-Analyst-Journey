@@ -1,66 +1,159 @@
-# 🛡️ SOC Analyst Journey
+# 🛡️ SOC Analyst Journey — 30 Days of Hands-On Blue Team Training
 
-Welcome to my **SOC Analyst Learning Journey** 🚀  
-This repository documents my **daily hands-on practice, investigations, and case studies** as I train to become a SOC Analyst.
+![Progress](https://img.shields.io/badge/Progress-20%2F30%20Days-blue)
+![BTLO Points](https://img.shields.io/badge/BTLO-150%2B%20Points-brightgreen)
+![LetsDefend Badges](https://img.shields.io/badge/LetsDefend-7%20Badges-purple)
+![Platform](https://img.shields.io/badge/Platform-Ubuntu%2024-orange)
+![Cost](https://img.shields.io/badge/Cost-100%25%20Free-success)
+![GitHub last commit](https://img.shields.io/github/last-commit/ShakiUllah/SOC-Analyst-Journey)
+
+---
+
+## 👤 About Me
+
+**Shakir Ullah** — Aspiring SOC Analyst from Mingora, Pakistan 🇵🇰
+
+A self-taught cybersecurity practitioner completing a structured 30-day Blue Team training program using 100% free tools and platforms. Every day involves real hands-on lab work, documented as professional case studies with screenshots, MITRE ATT&CK mappings, and tool walkthroughs.
+
+- 💼 [LinkedIn](https://www.linkedin.com/in/shakir-ullah-161273377/)
+- 🐙 [GitHub](https://github.com/ShakiUllah/)
+- 🖥️ Device: Dell i3 3rd Gen · Ubuntu 24 · Lightweight & free tools only
+
+---
+
+## 🎯 Mission
+
+Break into cybersecurity as a **Tier 1 SOC Analyst** by building a real, verifiable, public portfolio of daily hands-on work — no paid courses, no shortcuts, just grinding through real labs every single day.
+
+---
+
+## 🏆 Achievements & Certifications
+
+### LetsDefend Badges (7 Earned)
+| Badge | Course | Date |
+|-------|--------|------|
+| ✅ Splunk Engineer | Splunk Fundamentals | Day 11 |
+| ✅ Phishing Expert | Phishing Email Analysis | Day 15 |
+| ✅ SIEM 101 | SIEM 101 | Day 17 |
+| ✅ VirusTotal for SOC Analysts | VirusTotal | Day 17 |
+| ✅ How to Investigate a SIEM Alert | SIEM Alert Investigation | Day 17 |
+| ✅ Malware Analyzer | Malware Analysis Fundamentals | Day 18 |
+| ✅ Threat Analyst | Cyber Threat Intelligence | Day 19 |
+
+### BTLO — Blue Team Labs Online
+| Points | Challenges Completed | Highest Difficulty |
+|--------|---------------------|-------------------|
+| 150+ pts | 6 challenges | HARD (30pts) |
+
+### Virtual Internships
+| Program | Provider | Status |
+|---------|----------|--------|
+| Mastercard Cybersecurity Virtual Experience | Forage | ✅ Completed |
+
+---
+
+## 🛠️ Tools & Technologies
+
+| Category | Tools |
+|----------|-------|
+| **SIEM** | Wazuh, Splunk |
+| **IDS/IPS** | Suricata, Snort |
+| **Network Analysis** | Wireshark, tcpdump |
+| **Memory Forensics** | Volatility |
+| **Malware Analysis** | AnyRun, CyberChef, VirusTotal, strings, xxd |
+| **Threat Intelligence** | MITRE ATT&CK, AbuseIPDB, MalwareBazaar, AlienVault OTX |
+| **Attack Simulation** | Hydra, WPScan, SQLmap (detected in logs) |
+| **Linux CLI** | grep, awk, sort, uniq, head, tail, cut |
+| **Windows Forensics** | Event Viewer, Sysmon, TeslaDecoder |
+| **Documentation** | Markdown, GitHub, Case Study Reporting |
 
 ---
 
 ## 📅 Daily Case Studies
 
-| Day | Title | Link |
-|-----|-----------------------------|-------------------------------------------------------------|
-| 1   | Failed Login Attempts (Linux SSH) | [View Report](Case_Studies/Day01_Failed_SSH_Logins.md) |
-| 2   | Successful vs Failed SSH Logins (Linux) | [View Report](Case_Studies/Day02_Successful_vs_Failed_Logins.md) |
-| 2   | Successful vs Failed Logins (Windows) | [View Report](Case_Studies/Day02_Windows_Successful_vs_Failed_Logins.md) |
-| 3   | Wazuh SIEM Installation & Exploration | [View Report](Case_Studies/Day03_Wazuh_SIEM_Installation.md) |
-| 4   | Wazuh Local Agent Lab | [View Report](Case_Studies/Day04_Wazuh_Local_Agent.md) |
-| 5   | SSH Brute-Force Attack & Detection | [View Report](Case_Studies/Day05_SSH_Brute_Force_Attack.md) |
-| 6   | Log Analysis and Detection Engineering TryHackMe | [View Report](Case_Studies/Day06_Log_Analysis_and_Detection_Engineering.md)
-| 7   | Project: Hybrid-Cloud SIEM Lab Setup | [View Report](Case_Studies/Day07_Hybrid_Cloud_SIEM_Lab.md)
-| 8   | Mastercard Cybersecurity Virtual Experience Program (Forage) | [View Report](Case_Studies/Day08_Forage_Mastercard_Cybersecurity_Simulation.md)
-| 9   | Windows Forensics 1 TryHackMe | [View Report](Case_Studies/Day09_Windows_Forensics_1_TryHackMe.md)
-| 10   | Project: Advanced Wazuh Rule & Decoder Development | [View Report](Case_Studies/Day10_Project_Wazuh_Custom_Rule_Development.md)
-| 11   | Splunk Fundamentals (LetsDefend) | [View Report](Case_Studies/Day11_Splunk_Fundamentals_LetsDefend.md)
-| 12   | BTLO: Network Analysis (Ransomware) & Log Analysis (Privilege Escalation) | [View Report](Case_Studies/Day12_BTLO_Network_and_Log_Analysis.md)
-| 13   | BTLO: Memory Analysis (Ransomware) & Phishing Analysis | [View Report](Case_Studies/Day13_Memory_Analysis_and_Phishing_Analysis.md)
-| 14   | Suricata IDS Setup & Custom Rule Writing | [View Report](Case_Studies/Day14_Suricata_IDS_Custom_Rules.md)
-| 15   | Phishing Email Analysis & IOC Extraction | [View Report](Case_Studies/Day15_Phishing_Email_Analysis.md)
-| 16   | Detecting Web Attacks & Log Analysis: Compromised WordPress | [View Report](Case_Studies/Day16_Detecting_Web_Attacks.md)
-| 17   | SIEM 101, VirusTotal & Log Analysis: Sysmon | [View Report](Case_Studies/Day17_SIEM_VirusTotal_Sysmon.md)
-| 18   | Malware Analysis Fundamentals + BTLO: Secure Shell (HARD) | [View Report](Case_Studies/Day18_Malware_Analysis_Fundamentals_and_BTLO_Secure_Shell.md)
-| 19   | Cyber Threat Intelligence + MITRE ATT&CK Mapping | [View Report](Case_Studies/Day19_Threat_Intelligence_and_MITRE_ATTaCK_Mapping.md)
+### ✅ Completed (Days 1–19)
 
+| Day | Topic | Platform | BTLO Pts | Key Tools |
+|-----|-------|----------|----------|-----------|
+| [01](Case_Studies/Day01_Failed_SSH_Logins.md) | Failed Login Attempts (Linux SSH) | Local | — | grep, /var/log |
+| [02](Case_Studies/Day02_Successful_vs_Failed_Logins.md) | Successful vs Failed SSH Logins (Linux) | Local | — | grep, awk |
+| [02b](Case_Studies/Day02_Windows_Successful_vs_Failed_Logins.md) | Successful vs Failed Logins (Windows) | Local | — | Event Viewer |
+| [03](Case_Studies/Day03_Wazuh_SIEM_Installation.md) | Wazuh SIEM Installation & Exploration | Local | — | Wazuh |
+| [04](Case_Studies/Day04_Wazuh_Local_Agent.md) | Wazuh Local Agent Lab | Local | — | Wazuh |
+| [05](Case_Studies/Day05_SSH_Brute_Force_Attack.md) | SSH Brute-Force Attack & Detection | Local | — | Hydra, Wazuh |
+| [06](Case_Studies/Day06_Log_Analysis_and_Detection_Engineering.md) | Log Analysis & Detection Engineering | TryHackMe | — | grep, awk |
+| [07](Case_Studies/Day07_Hybrid_Cloud_SIEM_Lab.md) | Hybrid-Cloud SIEM Lab Setup | Local | — | Wazuh |
+| [08](Case_Studies/Day08_Forage_Mastercard_Cybersecurity_Simulation.md) | Mastercard Cybersecurity Simulation | Forage | — | Phishing Analysis |
+| [09](Case_Studies/Day09_Windows_Forensics_1_TryHackMe.md) | Windows Forensics 1 | TryHackMe | — | Registry, Autopsy |
+| [10](Case_Studies/Day10_Project_Wazuh_Custom_Rule_Development.md) | Advanced Wazuh Rule & Decoder Development | Local | — | Wazuh |
+| [11](Case_Studies/Day11_Splunk_Fundamentals_LetsDefend.md) | Splunk Fundamentals | LetsDefend | — | Splunk, SPL |
+| [12](Case_Studies/Day12_BTLO_Network_and_Log_Analysis.md) | BTLO: Network Analysis Ransomware + Log Analysis Privilege Escalation | BTLO | 30pts | Wireshark, grep |
+| [13](Case_Studies/Day13_Memory_Analysis_and_Phishing_Analysis.md) | BTLO: Memory Analysis WannaCry + Phishing Analysis | BTLO | 30pts | Volatility, Thunderbird |
+| [14](Case_Studies/Day14_Suricata_IDS_Custom_Rules.md) | Suricata IDS Setup & Custom Rule Writing + Wazuh Integration | Local | — | Suricata, Wazuh |
+| [15](Case_Studies/Day15_Phishing_Email_Analysis.md) | Phishing Email Analysis 2 + IOC Extraction | BTLO + LetsDefend | 10pts | CyberChef, VirusTotal |
+| [16](Case_Studies/Day16_Detecting_Web_Attacks.md) | Detecting Web Attacks + Log Analysis: Compromised WordPress | LetsDefend + BTLO | 20pts | WPScan, SQLmap logs |
+| [17](Case_Studies/Day17_SIEM_VirusTotal_Sysmon.md) | SIEM 101 + VirusTotal + SIEM Alert Investigation + Sysmon Log Analysis | LetsDefend + BTLO | 20pts | Wazuh, Sysmon |
+| [18](Case_Studies/Day18_Malware_Analysis_Fundamentals_and_BTLO_Secure_Shell.md) | Malware Analysis Fundamentals + BTLO: Secure Shell (HARD) | LetsDefend + BTLO | 30pts | AnyRun, CyberChef, grep |
+| [19](Case_Studies/Day19_Threat_Intelligence_and_MITRE_ATTaCK_Mapping.md) | Cyber Threat Intelligence + MITRE ATT&CK Mapping | LetsDefend + BTLO | 10pts | ATT&CK Navigator |
 
+### 📅 Upcoming (Days 20–30)
 
-
+| Day | Planned Topic |
+|-----|--------------|
+| 20 | Mid-Journey Portfolio Review & GitHub Cleanup ← **TODAY** |
+| 21 | Incident Response Playbook Development |
+| 22 | Full Attack Simulation (Hydra + Wazuh + Suricata) |
+| 23 | OSINT for SOC (Shodan, VirusTotal, AbuseIPDB) |
+| 24 | TryHackMe Cyber Defense Path |
+| 25 | Cloud Security — AWS CloudTrail Log Analysis |
+| 26 | Custom Detection Use Case (MITRE Technique) |
+| 27 | SOC Portfolio PDF Writing |
+| 28 | Mock SOC Interview Prep |
+| 29 | Apply to Entry-Level Roles & Forage Internships |
+| 30 | Final Reflection — GitHub & LinkedIn Post |
 
 ---
 
-## 🏆 Virtual Internships & Job Simulations
+## 🗺️ MITRE ATT&CK Coverage
 
-- **Mastercard Cybersecurity Virtual Experience Program (Forage)** - *Completed September 2025*
-  - Tasks included phishing analysis and creating security awareness training materials.
+Techniques encountered and documented across my 30-day journey:
 
-
+| Technique | ID | Tactic | Day |
+|-----------|-----|--------|-----|
+| Brute Force: Password Guessing | T1110.001 | Credential Access | Day 1, 2, 5 |
+| Brute Force: Password Spraying | T1110.003 | Credential Access | Day 5 |
+| Exploit Public-Facing Application | T1190 | Initial Access | Day 13, 16 |
+| Spearphishing Attachment | T1566.001 | Initial Access | Day 15 |
+| Data Encrypted for Impact | T1486 | Impact | Day 12 |
+| Obfuscated Files or Information | T1027 | Defense Evasion | Day 13 |
+| OS Command Injection | T1059 | Execution | Day 16 |
+| Exfiltration Over Alt Protocol (SMTP) | T1048.002 | Exfiltration | Day 18 |
+| Input Capture: Keylogging | T1056.001 | Collection | Day 18 |
+| Steal Web Session Cookie | T1539 | Credential Access | Day 18 |
+| Valid Accounts | T1078 | Defense Evasion | Day 18 |
+| Content Injection | T1659 | Initial Access | Day 19 |
+| Trusted Relationship | T1199 | Initial Access | Day 19 |
 
 ---
 
 ## 📂 Repository Structure
+
 ```
 SOC-Analyst-Journey/
-│── Case_Studies/        # Daily investigation reports
-│   ├── Day01_Failed_Login_Attempts.md
+├── README.md                          ← You are here
+├── Case_Studies/                      ← Daily write-ups (Markdown)
+│   ├── Day01_Failed_SSH_Logins.md
 │   ├── Day02_Successful_vs_Failed_Logins.md
 │   ├── Day02_Windows_Successful_vs_Failed_Logins.md
 │   ├── Day03_Wazuh_SIEM_Installation.md
 │   ├── Day04_Wazuh_Local_Agent.md
 │   ├── Day05_SSH_Brute_Force_Attack.md
-│   ├── Day06_Log_Analysis_and-Detection_Engineering.md
+│   ├── Day06_Log_Analysis_and_Detection_Engineering.md
 │   ├── Day07_Hybrid_Cloud_SIEM_Lab.md
 │   ├── Day08_Forage_Mastercard_Cybersecurity_Simulation.md
 │   ├── Day09_Windows_Forensics_1_TryHackMe.md
 │   ├── Day10_Project_Wazuh_Custom_Rule_Development.md
-│   ├── Day11_Splunk_Fundamentals_LetsDefend.md  
+│   ├── Day11_Splunk_Fundamentals_LetsDefend.md
 │   ├── Day12_BTLO_Network_and_Log_Analysis.md
 │   ├── Day13_Memory_Analysis_and_Phishing_Analysis.md
 │   ├── Day14_Suricata_IDS_Custom_Rules.md
@@ -68,58 +161,42 @@ SOC-Analyst-Journey/
 │   ├── Day16_Detecting_Web_Attacks.md
 │   ├── Day17_SIEM_VirusTotal_Sysmon.md
 │   ├── Day18_Malware_Analysis_Fundamentals_and_BTLO_Secure_Shell.md
-│   ├── Day19_Threat_Intelligence_and_MITRE_ATTaCK_Mapping.md
-│── Screenshots/         # Images for each case study
-│── README.md            # Main documentation
+│   └── Day19_Threat_Intelligence_and_MITRE_ATTaCK_Mapping.md
+├── Screenshots/                       ← All evidence screenshots (DayXX_name.png)
+└── Portfolio/                         ← Final PDF portfolio (Day 27)
 ```
 
 ---
 
-## 🎯 Goals of this Journey
-- Practice daily SOC analyst tasks (log analysis, alert investigation, threat hunting).  
-- Build a **public portfolio** to showcase my work to recruiters.  
-- Learn both **Linux and Windows log analysis**.  
-- Document all findings in a professional format.
+## 📌 How to Navigate This Repo
+
+Each case study follows the same professional structure:
+1. **Objective** — what the day's goal was
+2. **Theory** — concepts learned
+3. **Lab / Hands-On** — step-by-step walkthrough with screenshots
+4. **Findings** — what was discovered
+5. **Key Learnings** — takeaways
+6. **MITRE ATT&CK Mapping** — techniques observed (Day 12+)
 
 ---
 
-## 📌 Next Steps
-- Complete the official **Splunk Fundamentals 1** free training course.
-- Practice Splunk's Search Processing Language (SPL) in the hands-on rooms on **TryHackMe**.
-- Begin the **Mastercard Cybersecurity Job Simulation on Forage** to practice real-world analyst workflows.
-- Continue expanding the hybrid-cloud lab with new detection rules and scenarios.
-- Learn the basics of writing **Sigma rules** for cross-platform threat detection.
+## 📑 About This Project
 
+| Item | Detail |
+|------|--------|
+| 🖥️ OS | Ubuntu 24 |
+| 💻 Hardware | Dell i3 3rd Gen |
+| 💰 Cost | 100% Free |
+| 📅 Duration | 30 Days |
+| 🎯 Target Role | Tier 1 SOC Analyst |
+| 🌍 Location | Mingora, Khyber Pakhtunkhwa, Pakistan |
 
----
-
-## 📑 Portfolio
-The final **SOC Analyst Portfolio** will be stored in the [Portfolio/](Portfolio) folder, including:  
-- SOC Portfolio Report (PDF)  
-- Final Case Study Reports (Markdown)  
-- Incident Response Reports  
+> *"Every expert was once a beginner. Every pro was once an amateur."*
+> This repo is proof that you don't need expensive bootcamps or certifications to build real skills — just consistency and the right free resources.
 
 ---
 
-## 📌 About This Project
-- 🖥️ Focus: SOC Analyst (Blue Team) skills  
-- 🆓 All tools and labs are free (Wazuh, Suricata, Wireshark, TryHackMe free rooms, LetsDefend, Forage internships, Microsoft Learn, Cisco Cybersecurity Essentials).  
-- 📈 Goal: Build a **public portfolio** to demonstrate real SOC skills for entry-level cybersecurity roles.  
+## 🔗 Connect With Me
 
----
-
-## 🛠️ Key Skills & Technologies
-- **SIEM:** Wazuh  
-- **IDS/IPS:** Snort, Suricata  
-- **Log Analysis:** Linux (`/var/log`), Windows (Event Viewer)  
-- **Network Security:** TCP/IP, Packet Analysis (Wireshark)  
-- **Threat Simulation:** Hydra  
-- **Linux Security:** Command Line, SSH  
-- **Windows Security:** Basic Log Analysis  
-- **Documentation:** Markdown, Case Study Reporting  
-
----
-
-## 🔗 Connect with Me
-- **GitHub Portfolio:** [GitHub Profile](https://github.com/ShakiUllah/)  
-- **LinkedIn:** [LinkedIn Profile](https://www.linkedin.com/in/shakir-ullah-161273377/)  
+- 💼 **LinkedIn:** [Shakir Ullah](https://www.linkedin.com/in/shakir-ullah-161273377/)
+- 🐙 **GitHub:** [ShakiUllah](https://github.com/ShakiUllah/)
