@@ -129,7 +129,6 @@ The key insight: alerts do not always indicate an actual incident. Most time is 
 
 **Shaker Ullah** — Incident Management 101 completed on **Apr 26, 2026 at 09:52 AM**
 
-![Incident Management Badge](../Screenshots/Day21_letsdefend_incident_management_badge.png)
 ![Incident Management Certificate](../Screenshots/Day21_letsdefend_incident_management_certificate.png)
 
 ---

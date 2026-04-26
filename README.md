@@ -1,6 +1,11 @@
 # 🛡️ SOC Analyst Journey — 30 Days of Hands-On Blue Team Training
 
-[![Progress](https://img.shields.io/badge/Progress-20%2F30%20Days-blue)](https://github.com/ShakiUllah/SOC-Analyst-Journey) [![BTLO Points](https://img.shields.io/badge/BTLO-150%2B%20Points-brightgreen)](https://blueteamlabs.online) [![LetsDefend Badges](https://img.shields.io/badge/LetsDefend-7%20Badges-purple)](https://app.letsdefend.io) [![Platform](https://img.shields.io/badge/Platform-Ubuntu%2024-orange)](https://github.com/ShakiUllah/SOC-Analyst-Journey) [![Cost](https://img.shields.io/badge/Cost-100%25%20Free-success)](https://github.com/ShakiUllah/SOC-Analyst-Journey) [![GitHub last commit](https://img.shields.io/github/last-commit/ShakiUllah/SOC-Analyst-Journey)](https://github.com/ShakiUllah/SOC-Analyst-Journey/commits/main)
+![Progress](https://img.shields.io/badge/Progress-21%2F30%20Days-blue)
+![BTLO Points](https://img.shields.io/badge/BTLO-160%2B%20Points-brightgreen)
+![LetsDefend Badges](https://img.shields.io/badge/LetsDefend-9%20Badges-purple)
+![Platform](https://img.shields.io/badge/Platform-Ubuntu%2024-orange)
+![Cost](https://img.shields.io/badge/Cost-100%25%20Free-success)
+![GitHub last commit](https://img.shields.io/github/last-commit/ShakiUllah/SOC-Analyst-Journey)
 
 ---
 
@@ -24,21 +29,32 @@ Break into cybersecurity as a **Tier 1 SOC Analyst** by building a real, verifia
 
 ## 🏆 Achievements & Certifications
 
-### LetsDefend Badges (7 Earned)
-| Badge | Course | Date |
-|-------|--------|------|
-| ✅ Splunk Engineer | Splunk Fundamentals | Day 11 |
-| ✅ Phishing Expert | Phishing Email Analysis | Day 15 |
-| ✅ SIEM 101 | SIEM 101 | Day 17 |
-| ✅ VirusTotal for SOC Analysts | VirusTotal | Day 17 |
-| ✅ How to Investigate a SIEM Alert | SIEM Alert Investigation | Day 17 |
-| ✅ Malware Analyzer | Malware Analysis Fundamentals | Day 18 |
-| ✅ Threat Analyst | Cyber Threat Intelligence | Day 19 |
+### LetsDefend Badges (9 Earned)
+| Badge | Course | Verify |
+|-------|--------|--------|
+| ✅ Splunk Engineer | Splunk Fundamentals | [View Badge](https://app.letsdefend.io/my-rewards/detail/80968abf-cfe0-4574-9b52-12f49f1225ad) |
+| ✅ Phishing Expert | SOC Fundamentals | [View Badge](https://app.letsdefend.io/my-rewards/detail/22b0b2a2-df28-416e-81f6-9dbf883af739) |
+| ✅ SIEM 101 | The SIEM 101 | [View Badge](https://app.letsdefend.io/my-rewards/detail/00363ae1-a800-47d2-949d-fe358a010fa3) |
+| ✅ VirusTotal for SOC Analysts | VirusTotal for SOC Analysts | [View Badge](https://app.letsdefend.io/my-rewards/detail/19c9e00c-e549-4318-8b67-e3ae5db4d25a) |
+| ✅ How to Investigate a SIEM Alert | SIEM Alert Investigation | [View Badge](https://app.letsdefend.io/my-rewards/detail/93d4233b-3755-43b6-a947-f275d37e6787) |
+| ✅ Malware Analyzer | Malware Analysis Fundamentals | [View Badge](https://app.letsdefend.io/my-rewards/detail/886c6577-c5f0-4161-afbc-e54cdbc76729) |
+| ✅ Threat Analyst | Cyber Threat Intelligence | [View Badge](https://app.letsdefend.io/my-rewards/detail/f14dd34b-25ec-4a71-be45-74d9136f1465) |
+| ✅ First Blood | First Incident Investigation | [View Badge](https://app.letsdefend.io/my-rewards/detail/5c27ee68-6cf7-4d1f-9f80-bd668fc2370a) |
+| ✅ Incident Management | Incident Management 101 | [View Badge](https://app.letsdefend.io/my-rewards/detail/5491eb5118ed4ecbbb985dbade11e2e2) |
 
-### BTLO — Blue Team Labs Online
-| Points | Challenges Completed | Highest Difficulty |
-|--------|---------------------|-------------------|
-| 150+ pts | 6 challenges | HARD (30pts) |
+### BTLO — Blue Team Labs Online (160+ pts)
+| Challenge | Difficulty | Verify |
+|-----------|------------|--------|
+| Network Analysis — Ransomware | Medium | [View](https://blueteamlabs.online/achievement/share/challenge/153810/3) |
+| Log Analysis — Privilege Escalation | Medium | [View](https://blueteamlabs.online/achievement/share/challenge/153810/4) |
+| Memory Analysis — Ransomware | Medium | [View](https://blueteamlabs.online/achievement/share/challenge/153810/1) |
+| Phishing Analysis | Easy | [View](https://blueteamlabs.online/achievement/share/challenge/153810/16) |
+| Phishing Analysis 2 | Easy | [View](https://blueteamlabs.online/achievement/share/challenge/153810/24) |
+| Log Analysis — Compromised WordPress | Medium | [View](https://blueteamlabs.online/achievement/share/challenge/153810/9) |
+| Log Analysis — Sysmon | Medium | [View](https://blueteamlabs.online/achievement/share/challenge/153810/18) |
+| Secure Shell | Hard | [View](https://blueteamlabs.online/achievement/share/challenge/153810/17) |
+| ATT&CK | Easy | [View](https://blueteamlabs.online/achievement/share/challenge/153810/15) |
+| Follina | Easy | [View](https://blueteamlabs.online/achievement/share/challenge/153810/43) |
 
 ### Virtual Internships
 | Program | Provider | Status |
@@ -66,7 +82,7 @@ Break into cybersecurity as a **Tier 1 SOC Analyst** by building a real, verifia
 
 ## 📅 Daily Case Studies
 
-### ✅ Completed (Days 1–19)
+### ✅ Completed (Days 1–21)
 
 | Day | Topic | Platform | BTLO Pts | Key Tools |
 |-----|-------|----------|----------|-----------|
@@ -90,13 +106,13 @@ Break into cybersecurity as a **Tier 1 SOC Analyst** by building a real, verifia
 | 17 | [SIEM 101 + VirusTotal + SIEM Alert Investigation + Sysmon Log Analysis](Case_Studies/Day17_SIEM_VirusTotal_Sysmon.md) | LetsDefend + BTLO | 20pts | Wazuh, Sysmon |
 | 18 | [Malware Analysis Fundamentals + BTLO: Secure Shell (HARD)](Case_Studies/Day18_Malware_Analysis_Fundamentals_and_BTLO_Secure_Shell.md) | LetsDefend + BTLO | 30pts | AnyRun, CyberChef, grep |
 | 19 | [Cyber Threat Intelligence + MITRE ATT&CK Mapping](Case_Studies/Day19_Threat_Intelligence_and_MITRE_ATTaCK_Mapping.md) | LetsDefend + BTLO | 10pts | ATT&CK Navigator |
+| 20 | [Mid-Journey Portfolio Review & GitHub Cleanup](Case_Studies/Day20_Portfolio_Review_GitHub_Cleanup.md) | GitHub | — | Markdown, GitHub |
+| 21 | [Incident Response Playbooks + Incident Management 101 + BTLO: Follina](Case_Studies/Day21_Incident_Response_Playbook_Development.md) | LetsDefend + BTLO | 10pts | VirusTotal, unzip |
 
-### 📅 Upcoming (Days 20–30)
+### 📅 Upcoming (Days 22–30)
 
 | Day | Planned Topic |
 |-----|--------------|
-| 20 | Mid-Journey Portfolio Review & GitHub Cleanup ← **TODAY** |
-| 21 | Incident Response Playbook Development |
 | 22 | Full Attack Simulation (Hydra + Wazuh + Suricata) |
 | 23 | OSINT for SOC (Shodan, VirusTotal, AbuseIPDB) |
 | 24 | TryHackMe Cyber Defense Path |
@@ -115,10 +131,10 @@ Techniques encountered and documented across my 30-day journey:
 
 | Technique | ID | Tactic | Day |
 |-----------|-----|--------|-----|
-| Brute Force: Password Guessing | T1110.001 | Credential Access | Day 1, 2, 5 |
+| Brute Force: Password Guessing | T1110.001 | Credential Access | Day 1, 2, 5, 21 |
 | Brute Force: Password Spraying | T1110.003 | Credential Access | Day 5 |
 | Exploit Public-Facing Application | T1190 | Initial Access | Day 13, 16 |
-| Spearphishing Attachment | T1566.001 | Initial Access | Day 15 |
+| Spearphishing Link | T1566.001 | Initial Access | Day 15, 21 |
 | Data Encrypted for Impact | T1486 | Impact | Day 12 |
 | Obfuscated Files or Information | T1027 | Defense Evasion | Day 13 |
 | OS Command Injection | T1059 | Execution | Day 16 |
@@ -128,6 +144,10 @@ Techniques encountered and documented across my 30-day journey:
 | Valid Accounts | T1078 | Defense Evasion | Day 18 |
 | Content Injection | T1659 | Initial Access | Day 19 |
 | Trusted Relationship | T1199 | Initial Access | Day 19 |
+| Exploitation for Client Execution | T1203 | Execution | Day 21 (Follina) |
+| Template Injection | T1221 | Defense Evasion | Day 21 (Follina) |
+| Process Injection | T1055 | Defense Evasion | Day 21 (Follina) |
+| Inter-Process Communication | T1559 | Execution | Day 21 (Follina) |
 
 ---
 
@@ -156,7 +176,9 @@ SOC-Analyst-Journey/
 │   ├── Day16_Detecting_Web_Attacks.md
 │   ├── Day17_SIEM_VirusTotal_Sysmon.md
 │   ├── Day18_Malware_Analysis_Fundamentals_and_BTLO_Secure_Shell.md
-│   └── Day19_Threat_Intelligence_and_MITRE_ATTaCK_Mapping.md
+│   ├── Day19_Threat_Intelligence_and_MITRE_ATTaCK_Mapping.md
+│   ├── Day20_Portfolio_Review_GitHub_Cleanup.md
+│   └── Day21_Incident_Response_Playbook_Development.md
 ├── Screenshots/
 └── Portfolio/
 ```
