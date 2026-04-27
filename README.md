@@ -1,6 +1,6 @@
 # 🛡️ SOC Analyst Journey — 30 Days of Hands-On Blue Team Training
 
-![Progress](https://img.shields.io/badge/Progress-21%2F30%20Days-blue)
+![Progress](https://img.shields.io/badge/Progress-22%2F30%20Days-blue)
 ![BTLO Points](https://img.shields.io/badge/BTLO-160%2B%20Points-brightgreen)
 ![LetsDefend Badges](https://img.shields.io/badge/LetsDefend-9%20Badges-purple)
 ![Platform](https://img.shields.io/badge/Platform-Ubuntu%2024-orange)
@@ -82,7 +82,7 @@ Break into cybersecurity as a **Tier 1 SOC Analyst** by building a real, verifia
 
 ## 📅 Daily Case Studies
 
-### ✅ Completed (Days 1–21)
+### ✅ Completed (Days 1–22)
 
 | Day | Topic | Platform | BTLO Pts | Key Tools |
 |-----|-------|----------|----------|-----------|
@@ -108,12 +108,12 @@ Break into cybersecurity as a **Tier 1 SOC Analyst** by building a real, verifia
 | 19 | [Cyber Threat Intelligence + MITRE ATT&CK Mapping](Case_Studies/Day19_Threat_Intelligence_and_MITRE_ATTaCK_Mapping.md) | LetsDefend + BTLO | 10pts | ATT&CK Navigator |
 | 20 | [Mid-Journey Portfolio Review & GitHub Cleanup](Case_Studies/Day20_Portfolio_Review_GitHub_Cleanup.md) | GitHub | — | Markdown, GitHub |
 | 21 | [Incident Response Playbooks + Incident Management 101 + BTLO: Follina](Case_Studies/Day21_Incident_Response_Playbook_Development.md) | LetsDefend + BTLO | 10pts | VirusTotal, unzip |
+| 22 | [Full Attack Simulation: Hydra + Wazuh + Suricata](Case_Studies/Day22_Full_Attack_Simulation_Hydra_Wazuh_Suricata.md) | Local Lab | — | Hydra, Wazuh, Suricata, UFW |
 
-### 📅 Upcoming (Days 22–30)
+### 📅 Upcoming (Days 23–30)
 
 | Day | Planned Topic |
 |-----|--------------|
-| 22 | Full Attack Simulation (Hydra + Wazuh + Suricata) |
 | 23 | OSINT for SOC (Shodan, VirusTotal, AbuseIPDB) |
 | 24 | TryHackMe Cyber Defense Path |
 | 25 | Cloud Security — AWS CloudTrail Log Analysis |
@@ -131,8 +131,10 @@ Techniques encountered and documented across my 30-day journey:
 
 | Technique | ID | Tactic | Day |
 |-----------|-----|--------|-----|
-| Brute Force: Password Guessing | T1110.001 | Credential Access | Day 1, 2, 5, 21 |
+| Brute Force: Password Guessing | T1110.001 | Credential Access | Day 1, 2, 5, 21, 22 |
 | Brute Force: Password Spraying | T1110.003 | Credential Access | Day 5 |
+| Valid Accounts | T1078 | Defense Evasion | Day 18, 22 |
+| Remote Services: SSH | T1021.004 | Lateral Movement | Day 22 (Hydra attack) |
 | Exploit Public-Facing Application | T1190 | Initial Access | Day 13, 16 |
 | Spearphishing Link | T1566.001 | Initial Access | Day 15, 21 |
 | Data Encrypted for Impact | T1486 | Impact | Day 12 |
@@ -178,7 +180,8 @@ SOC-Analyst-Journey/
 │   ├── Day18_Malware_Analysis_Fundamentals_and_BTLO_Secure_Shell.md
 │   ├── Day19_Threat_Intelligence_and_MITRE_ATTaCK_Mapping.md
 │   ├── Day20_Portfolio_Review_GitHub_Cleanup.md
-│   └── Day21_Incident_Response_Playbook_Development.md
+│   ├── Day21_Incident_Response_Playbook_Development.md
+│   └── Day22_Full_Attack_Simulation_Hydra_Wazuh_Suricata.md
 ├── Screenshots/
 └── Portfolio/
 ```
