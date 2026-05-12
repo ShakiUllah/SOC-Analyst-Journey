@@ -1,6 +1,6 @@
 # 🛡️ SOC Analyst Journey — 30 Days of Hands-On Blue Team Training
 
-![Progress](https://img.shields.io/badge/Progress-22%2F30%20Days-blue)
+![Progress](https://img.shields.io/badge/Progress-23%2F30%20Days-blue)
 ![BTLO Points](https://img.shields.io/badge/BTLO-160%2B%20Points-brightgreen)
 ![LetsDefend Badges](https://img.shields.io/badge/LetsDefend-9%20Badges-purple)
 ![Platform](https://img.shields.io/badge/Platform-Ubuntu%2024-orange)
@@ -82,7 +82,7 @@ Break into cybersecurity as a **Tier 1 SOC Analyst** by building a real, verifia
 
 ## 📅 Daily Case Studies
 
-### ✅ Completed (Days 1–22)
+### ✅ Completed (Days 1–23)
 
 | Day | Topic | Platform | BTLO Pts | Key Tools |
 |-----|-------|----------|----------|-----------|
@@ -109,12 +109,12 @@ Break into cybersecurity as a **Tier 1 SOC Analyst** by building a real, verifia
 | 20 | [Mid-Journey Portfolio Review & GitHub Cleanup](Case_Studies/Day20_Portfolio_Review_GitHub_Cleanup.md) | GitHub | — | Markdown, GitHub |
 | 21 | [Incident Response Playbooks + Incident Management 101 + BTLO: Follina](Case_Studies/Day21_Incident_Response_Playbook_Development.md) | LetsDefend + BTLO | 10pts | VirusTotal, unzip |
 | 22 | [Full Attack Simulation: Hydra + Wazuh + Suricata](Case_Studies/Day22_Full_Attack_Simulation_Hydra_Wazuh_Suricata.md) | Local Lab | — | Hydra, Wazuh, Suricata, UFW |
+| 23 | [OSINT for SOC: Threat Intel Tools + Shodan + AbuseIPDB + Have a Break](Case_Studies/Day23_OSINT_for_SOC_Threat_Intelligence_Tools.md) | TryHackMe + OSINT | — | Shodan, AbuseIPDB, URLScan, ThreatFox, Talos |
 
-### 📅 Upcoming (Days 23–30)
+### 📅 Upcoming (Days 24–30)
 
 | Day | Planned Topic |
 |-----|--------------|
-| 23 | OSINT for SOC (Shodan, VirusTotal, AbuseIPDB) |
 | 24 | TryHackMe Cyber Defense Path |
 | 25 | Cloud Security — AWS CloudTrail Log Analysis |
 | 26 | Custom Detection Use Case (MITRE Technique) |
@@ -150,6 +150,10 @@ Techniques encountered and documented across my 30-day journey:
 | Template Injection | T1221 | Defense Evasion | Day 21 (Follina) |
 | Process Injection | T1055 | Defense Evasion | Day 21 (Follina) |
 | Inter-Process Communication | T1559 | Execution | Day 21 (Follina) |
+| Phishing: Spearphishing Attachment | T1566.001 | Initial Access | Day 15, 21, 23 (Dridex) |
+| Search Open Technical Databases | T1596 | Reconnaissance | Day 23 (Shodan, AbuseIPDB) |
+| Acquire Infrastructure: Domains | T1583.001 | Resource Dev | Day 23 (zyevantoby.cn) |
+| Hide Infrastructure via Tor | T1090.003 | C&C | Day 23 (185.220.101.1) |
 
 ---
 
@@ -181,7 +185,8 @@ SOC-Analyst-Journey/
 │   ├── Day19_Threat_Intelligence_and_MITRE_ATTaCK_Mapping.md
 │   ├── Day20_Portfolio_Review_GitHub_Cleanup.md
 │   ├── Day21_Incident_Response_Playbook_Development.md
-│   └── Day22_Full_Attack_Simulation_Hydra_Wazuh_Suricata.md
+│   ├── Day22_Full_Attack_Simulation_Hydra_Wazuh_Suricata.md
+│   └── Day23_OSINT_for_SOC_Threat_Intelligence_Tools.md
 ├── Screenshots/
 └── Portfolio/
 ```
