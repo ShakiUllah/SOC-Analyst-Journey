@@ -15,7 +15,7 @@
 
 A self-taught cybersecurity practitioner completing a structured 30-day Blue Team training program using 100% free tools and platforms. Every day involves real hands-on lab work, documented as professional case studies with screenshots, MITRE ATT&CK mappings, and tool walkthroughs.
 
-- 💼 [LinkedIn](https://www.linkedin.com/in/shakir-ullah-161273377/)
+- 💼 [LinkedIn](https://www.linkedin.com/in/shaker-ullah-khan)
 - 🐙 [GitHub](https://github.com/ShakiUllah/)
 - 🖥️ Device: Dell i3 3rd Gen · Ubuntu 24 · Lightweight & free tools only
 
@@ -224,5 +224,5 @@ Each case study follows the same professional structure:
 
 ## 🔗 Connect With Me
 
-- 💼 **LinkedIn:** [Shakir Ullah](https://www.linkedin.com/in/shakir-ullah-161273377/)
+- 💼 **LinkedIn:** [Shakir Ullah](https://www.linkedin.com/in/shaker-ullah-khan)
 - 🐙 **GitHub:** [ShakiUllah](https://github.com/ShakiUllah/)
