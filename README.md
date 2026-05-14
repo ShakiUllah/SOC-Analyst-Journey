@@ -1,6 +1,6 @@
 # 🛡️ SOC Analyst Journey — 30 Days of Hands-On Blue Team Training
 
-![Progress](https://img.shields.io/badge/Progress-23%2F30%20Days-blue)
+![Progress](https://img.shields.io/badge/Progress-24%2F30%20Days-blue)
 ![BTLO Points](https://img.shields.io/badge/BTLO-160%2B%20Points-brightgreen)
 ![LetsDefend Badges](https://img.shields.io/badge/LetsDefend-9%20Badges-purple)
 ![Platform](https://img.shields.io/badge/Platform-Ubuntu%2024-orange)
@@ -68,14 +68,14 @@ Break into cybersecurity as a **Tier 1 SOC Analyst** by building a real, verifia
 | Category | Tools |
 |----------|-------|
 | **SIEM** | Wazuh, Splunk |
-| **IDS/IPS** | Suricata, Snort |
+| **IDS/IPS** | Suricata, Snort (Sniffer, Packet Logger, IDS/IPS, PCAP modes) |
 | **Network Analysis** | Wireshark, tcpdump |
 | **Memory Forensics** | Volatility |
 | **Malware Analysis** | AnyRun, CyberChef, VirusTotal, strings, xxd |
 | **Threat Intelligence** | MITRE ATT&CK, AbuseIPDB, MalwareBazaar, AlienVault OTX |
 | **Attack Simulation** | Hydra, WPScan, SQLmap (detected in logs) |
 | **Linux CLI** | grep, awk, sort, uniq, head, tail, cut |
-| **Windows Forensics** | Event Viewer, Sysmon, TeslaDecoder |
+| **Windows Forensics** | Event Viewer, Sysmon, TeslaDecoder, PowerShell Get-WinEvent, .evtx log analysis |
 | **Documentation** | Markdown, GitHub, Case Study Reporting |
 
 ---
@@ -110,12 +110,12 @@ Break into cybersecurity as a **Tier 1 SOC Analyst** by building a real, verifia
 | 21 | [Incident Response Playbooks + Incident Management 101 + BTLO: Follina](Case_Studies/Day21_Incident_Response_Playbook_Development.md) | LetsDefend + BTLO | 10pts | VirusTotal, unzip |
 | 22 | [Full Attack Simulation: Hydra + Wazuh + Suricata](Case_Studies/Day22_Full_Attack_Simulation_Hydra_Wazuh_Suricata.md) | Local Lab | — | Hydra, Wazuh, Suricata, UFW |
 | 23 | [OSINT for SOC: Threat Intel Tools + Shodan + AbuseIPDB + Have a Break](Case_Studies/Day23_OSINT_for_SOC_Threat_Intelligence_Tools.md) | TryHackMe + OSINT | — | Shodan, AbuseIPDB, URLScan, ThreatFox, Talos |
+| 24 | [TryHackMe SOC Level 1 — Jr Analyst Intro, Pyramid of Pain, Cyber Kill Chain, Unified Kill Chain, Snort IDS/IPS, Windows Logging for SOC](Case_Studies/Day24_SOC_Level1_Path_TryHackMe.md) | TryHackMe | 360 pts | Snort, Windows Event Viewer, PowerShell |
 
-### 📅 Upcoming (Days 24–30)
+### 📅 Upcoming (Days 25–30)
 
 | Day | Planned Topic |
 |-----|--------------|
-| 24 | TryHackMe Cyber Defense Path |
 | 25 | Cloud Security — AWS CloudTrail Log Analysis |
 | 26 | Custom Detection Use Case (MITRE Technique) |
 | 27 | SOC Portfolio PDF Writing |
@@ -186,7 +186,8 @@ SOC-Analyst-Journey/
 │   ├── Day20_Portfolio_Review_GitHub_Cleanup.md
 │   ├── Day21_Incident_Response_Playbook_Development.md
 │   ├── Day22_Full_Attack_Simulation_Hydra_Wazuh_Suricata.md
-│   └── Day23_OSINT_for_SOC_Threat_Intelligence_Tools.md
+│   ├── Day23_OSINT_for_SOC_Threat_Intelligence_Tools.md
+│   └── Day24_SOC_Level1_Path_TryHackMe.md
 ├── Screenshots/
 └── Portfolio/
 ```
