@@ -1,6 +1,6 @@
 # 🛡️ SOC Analyst Journey — 30 Days of Hands-On Blue Team Training
 
-![Progress](https://img.shields.io/badge/Progress-24%2F30%20Days-blue)
+![Progress](https://img.shields.io/badge/Progress-25%2F30%20Days-blue)
 ![BTLO Points](https://img.shields.io/badge/BTLO-160%2B%20Points-brightgreen)
 ![LetsDefend Badges](https://img.shields.io/badge/LetsDefend-9%20Badges-purple)
 ![Platform](https://img.shields.io/badge/Platform-Ubuntu%2024-orange)
@@ -15,7 +15,7 @@
 
 A self-taught cybersecurity practitioner completing a structured 30-day Blue Team training program using 100% free tools and platforms. Every day involves real hands-on lab work, documented as professional case studies with screenshots, MITRE ATT&CK mappings, and tool walkthroughs.
 
-- 💼 [LinkedIn](https://www.linkedin.com/in/shaker-ullah-khan)
+- 💼 [LinkedIn](https://www.linkedin.com/in/shakir-ullah-161273377/)
 - 🐙 [GitHub](https://github.com/ShakiUllah/)
 - 🖥️ Device: Dell i3 3rd Gen · Ubuntu 24 · Lightweight & free tools only
 
@@ -68,14 +68,15 @@ Break into cybersecurity as a **Tier 1 SOC Analyst** by building a real, verifia
 | Category | Tools |
 |----------|-------|
 | **SIEM** | Wazuh, Splunk |
-| **IDS/IPS** | Suricata, Snort (Sniffer, Packet Logger, IDS/IPS, PCAP modes) |
+| **IDS/IPS** | Suricata, Snort |
 | **Network Analysis** | Wireshark, tcpdump |
 | **Memory Forensics** | Volatility |
 | **Malware Analysis** | AnyRun, CyberChef, VirusTotal, strings, xxd |
 | **Threat Intelligence** | MITRE ATT&CK, AbuseIPDB, MalwareBazaar, AlienVault OTX |
 | **Attack Simulation** | Hydra, WPScan, SQLmap (detected in logs) |
 | **Linux CLI** | grep, awk, sort, uniq, head, tail, cut |
-| **Windows Forensics** | Event Viewer, Sysmon, TeslaDecoder, PowerShell Get-WinEvent, .evtx log analysis |
+| **Windows Forensics** | Event Viewer, Sysmon, TeslaDecoder |
+| **Cloud Security** | AWS CloudTrail (log analysis), jq (JSON processor), MITRE ATT&CK Cloud Matrix |
 | **Documentation** | Markdown, GitHub, Case Study Reporting |
 
 ---
@@ -111,12 +112,12 @@ Break into cybersecurity as a **Tier 1 SOC Analyst** by building a real, verifia
 | 22 | [Full Attack Simulation: Hydra + Wazuh + Suricata](Case_Studies/Day22_Full_Attack_Simulation_Hydra_Wazuh_Suricata.md) | Local Lab | — | Hydra, Wazuh, Suricata, UFW |
 | 23 | [OSINT for SOC: Threat Intel Tools + Shodan + AbuseIPDB + Have a Break](Case_Studies/Day23_OSINT_for_SOC_Threat_Intelligence_Tools.md) | TryHackMe + OSINT | — | Shodan, AbuseIPDB, URLScan, ThreatFox, Talos |
 | 24 | [TryHackMe SOC Level 1 — Jr Analyst Intro, Pyramid of Pain, Cyber Kill Chain, Unified Kill Chain, Snort IDS/IPS, Windows Logging for SOC](Case_Studies/Day24_SOC_Level1_Path_TryHackMe.md) | TryHackMe | 360 pts | Snort, Windows Event Viewer, PowerShell |
+| 25 | [Cloud Security for SOC — Cloud Security Pitfalls, Cloud Computing Fundamentals, AWS CloudTrail Log Analysis](Case_Studies/Day25_Cloud_Security_AWS_CloudTrail_Analysis.md) | TryHackMe + Local Lab | 136 pts | jq, CloudTrail JSON, MITRE ATT&CK |
 
-### 📅 Upcoming (Days 25–30)
+### 📅 Upcoming (Days 26–30)
 
 | Day | Planned Topic |
 |-----|--------------|
-| 25 | Cloud Security — AWS CloudTrail Log Analysis |
 | 26 | Custom Detection Use Case (MITRE Technique) |
 | 27 | SOC Portfolio PDF Writing |
 | 28 | Mock SOC Interview Prep |
@@ -187,7 +188,8 @@ SOC-Analyst-Journey/
 │   ├── Day21_Incident_Response_Playbook_Development.md
 │   ├── Day22_Full_Attack_Simulation_Hydra_Wazuh_Suricata.md
 │   ├── Day23_OSINT_for_SOC_Threat_Intelligence_Tools.md
-│   └── Day24_SOC_Level1_Path_TryHackMe.md
+│   ├── Day24_SOC_Level1_Path_TryHackMe.md
+│   └── Day25_Cloud_Security_AWS_CloudTrail_Analysis.md
 ├── Screenshots/
 └── Portfolio/
 ```
@@ -224,5 +226,5 @@ Each case study follows the same professional structure:
 
 ## 🔗 Connect With Me
 
-- 💼 **LinkedIn:** [Shakir Ullah](https://www.linkedin.com/in/shaker-ullah-khan)
+- 💼 **LinkedIn:** [Shakir Ullah](https://www.linkedin.com/in/shakir-ullah-161273377/)
 - 🐙 **GitHub:** [ShakiUllah](https://github.com/ShakiUllah/)
