@@ -1,89 +1,128 @@
-# 🚀 Project Write‑up: Building a Hybrid‑Cloud SIEM Lab
+# Project Write-up: Hybrid-Cloud SIEM Lab
 
-- ![Hybrid‑Cloud SIEM](../Screenshots/Day7_HybridCloud1.png)  
+## 1. Overview
 
-This document describes the engineering and troubleshooting journey of building a **hybrid‑cloud security monitoring lab** using **Wazuh SIEM**.  
-What started as a simple local setup evolved into a real‑world scenario that required advanced troubleshooting, pivoting between tools, and ultimately creating a hybrid solution.  
+This project documents the engineering and troubleshooting process behind a **hybrid-cloud security monitoring lab using Wazuh SIEM**.
 
----
+The original plan was to run a local virtual machine as an endpoint and monitor it with a Wazuh server. Virtualization constraints on the host forced a change in approach, leading to a lab in which a **GitHub Codespace acted as the monitored endpoint** while the **Wazuh server remained on the home laptop**.
 
-## 🎯 Objective  
+The most valuable part of the project was not simply the final architecture, but the troubleshooting and adaptation required to reach a working monitoring path.
 
-The original goal was straightforward:  
-- Run a **local virtual machine (VM)** as an endpoint.  
-- Deploy a **Wazuh SIEM server** on the same host.  
-- Practice log collection, alerting, and incident detection in a contained lab.  
+## 2. Objectives
 
----
+- Deploy a Wazuh server in a local environment.
+- Obtain endpoint telemetry from a separate environment.
+- Practice remote-agent registration and log collection.
+- Validate that the endpoint appears as active in the Wazuh dashboard.
+- Generate controlled security events and verify that they reach the SIEM.
 
-## 🧱 Challenges & Troubleshooting Journey  
+## 3. Initial Architecture
 
-### 1. Virtualization Failure: Secure Boot Block  
+The original design was based on a local virtual machine:
 
-Attempts to create a VM with **VirtualBox** and **VMware Player** failed due to kernel module errors (`vboxdrv`, `vmmon`).  
-
-🔎 Root Cause:  
-The host system’s **Secure Boot** policy prevented unsigned kernel modules from loading. Normally this can be resolved by disabling Secure Boot in BIOS/UEFI, but a **forgotten BIOS password** made this impossible.  
-
-➡️ Outcome: Forced pivot away from local virtualization.  
-
-*_(VMware kernel module error screenshot)_*  
-- ![VMware kernel module error screenshot](../Screenshots/Day7_VMware_Error.png)  
-
----
-
-### 2. Network Tunneling Challenge  
-
-To connect a cloud endpoint back to the home SIEM, tunneling was required.  
-- **ngrok** was the first choice, but its free tier required a credit card for TCP tunnels.  
-- **playit.gg** was adopted as the alternative, successfully providing a free persistent TCP tunnel.  
-
----
-
-## 💡 The Pivot: Hybrid‑Cloud Architecture  
-
-With local virtualization blocked, the project was re‑scoped into a hybrid design:  
-
-- **Endpoint:** A **GitHub Codespace** running Ubuntu, acting as a monitored remote system.  
-- **Network:** A **playit.gg tunnel** exposing the Wazuh agent port (1514) to the public internet.  
-- **Server:** A **Wazuh SIEM** deployed locally on the home laptop.  
-
-Architecture diagram:  
-
+```text
+[Local VM / Endpoint] ---> [Local Wazuh Server]
 ```
-[GitHub Codespace (Agent)] ---> [Public Internet] ---> [playit.gg Tunnel] ---> [Home Laptop (Wazuh Server)]
-```  
 
-✅ Verification: The `codespace-vm` endpoint checked in and appeared as **Active** in the Wazuh Dashboard.  
+Attempts to use VirtualBox and VMware Player encountered kernel-module errors (`vboxdrv` / `vmmon`). The investigation indicated that Secure Boot was preventing the required modules from loading. Disabling Secure Boot was not available because the BIOS password was unavailable.
 
-*_(Active agent in dashboard)_*  
-- ![Active agent in dashboard](../Screenshots/Day7_Active_agent2.png) 
-- ![Active agent in dashboard](../Screenshots/Day7_Active_agent.png)
+![VMware kernel-module error](../Screenshots/Day7_VMware_Error.png)
 
----
+## 4. Engineering Pivot
 
-## 📊 Testing & Indicators of Compromise  
+Instead of abandoning the experiment, I changed the architecture.
 
-A controlled SSH brute‑force test was run from the Codespace against itself to validate monitoring.  
+The final lab used:
 
-| Indicator Type   | Value         | Description                                  |
-|------------------|---------------|----------------------------------------------|
-| **Attacker IP**  | `127.0.0.1`   | Attack originated locally in the Codespace. |
-| **Target User**  | `codespace`   | Default Codespace account.                  |
-| **Service**      | `SSH (22)`    | Service targeted by brute‑force.            |
-| **Wazuh Rules**  | `5712`, `5716`| Detected brute‑force attempts + success.    |
+- **Endpoint:** GitHub Codespace running Ubuntu
+- **SIEM:** Wazuh server on the home laptop
+- **Tunnel:** playit.gg TCP tunnel
+- **Wazuh agent port:** 1514
 
----
+```text
+[GitHub Codespace]
+       |
+       | Wazuh agent traffic
+       v
+[playit.gg tunnel]
+       |
+       v
+[Home Laptop]
+       |
+       v
+[Wazuh Server / Dashboard]
+```
 
-## 🎓 Key Skills & Lessons Learned  
+The endpoint successfully registered and appeared as **Active** in the Wazuh Dashboard.
 
-This project provided real‑world, hands‑on security engineering experience:  
+![Active Wazuh agent](../Screenshots/Day7_Active_agent2.png)
 
-- **System‑Level Troubleshooting:** Diagnosed and worked around Secure Boot restrictions blocking virtualization.  
-- **Hybrid‑Cloud Networking:** Engineered secure connectivity between a cloud container (Codespace) and a private SIEM using tunnels.  
-- **Adaptability & Tool Pivoting:** Pivoted from VirtualBox → VMware → Codespace, and from ngrok → playit.gg.  
-- **SIEM Deployment:** Successfully deployed a Wazuh agent on a remote cloud container, configured keys, and validated log ingestion.  
+![Active agent](../Screenshots/Day7_Active_agent.png)
 
----
+## 5. Troubleshooting Process
 
-✅ The result is a **realistic hybrid‑cloud SIEM lab** that mirrors modern enterprise environments — central SIEM monitoring endpoints across different locations and networks.  
+### Virtualization
+
+The first blocker was the inability to load virtualization kernel modules because of the host's Secure Boot configuration. This required a change in the lab design rather than repeated attempts with the same configuration.
+
+### Connectivity
+
+A remote endpoint required a network path to the locally hosted Wazuh service. I initially investigated ngrok, but the free-tier requirements did not fit the TCP tunneling requirement. I then used playit.gg as the alternative for the lab.
+
+This sequence demonstrates an important engineering skill: **when an implementation path is blocked, isolate the constraint, evaluate alternatives, and preserve the original learning objective.**
+
+## 6. Validation Test
+
+A controlled SSH brute-force test was performed from the Codespace against the local environment to generate authentication telemetry.
+
+| Indicator | Observed value |
+|---|---|
+| Source | `127.0.0.1` |
+| Target user | `codespace` |
+| Service | SSH / 22 |
+| Wazuh rules | `5712`, `5716` |
+
+The resulting telemetry was detected by Wazuh, providing a practical validation that the endpoint-to-SIEM monitoring path was functioning.
+
+## 7. Security Considerations
+
+This was a laboratory architecture, not a production deployment. Exposing a service or agent port through a public tunnel introduces additional attack surface and should be treated accordingly.
+
+For a production design, I would prefer a private network path such as a VPN or other appropriately authenticated and encrypted connectivity mechanism, together with strict firewall rules and access controls.
+
+The tunnel was therefore used only to solve the connectivity problem in the controlled learning environment.
+
+## 8. Skills Demonstrated
+
+- Linux troubleshooting
+- Virtualization troubleshooting
+- SIEM deployment
+- Wazuh agent registration
+- Remote log collection
+- Basic TCP/network connectivity troubleshooting
+- Security-event validation
+- Technical problem solving and architecture pivoting
+
+## 9. Key Lessons
+
+### Technical lesson
+
+A security monitoring architecture depends on more than the SIEM itself. Endpoint connectivity, agent configuration, network reachability, and telemetry ingestion all have to work together.
+
+### Engineering lesson
+
+The original design failed because of a host-level constraint. Instead of treating the failure as the end of the project, I changed the architecture while keeping the same objective: obtain endpoint telemetry and investigate it centrally.
+
+## 10. Evidence
+
+The screenshots in this repository document the virtualization error, active Wazuh agent, and resulting monitoring state.
+
+## 11. Future Improvements
+
+Possible future extensions include:
+
+- Rebuilding the same architecture over a private VPN.
+- Adding additional endpoints.
+- Correlating authentication events with network telemetry.
+- Testing detection rules across different endpoint types.
+- Documenting network segmentation and least-privilege controls.
