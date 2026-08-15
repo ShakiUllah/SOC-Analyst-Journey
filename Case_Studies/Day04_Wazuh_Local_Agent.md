@@ -1,102 +1,124 @@
-# 🚀 Day 4 – Wazuh Local Agent Lab (SOC Analyst Journey)
+# Case Study: Wazuh Local Monitoring Lab
 
-Today I explored how **Wazuh works locally** on my own Ubuntu machine without installing a separate agent.  
-The Wazuh Manager comes with a **built-in local agent (ID: 000)** that can monitor system activity, logs, file changes, and even USB device connections.  
+**Environment:** Ubuntu with Wazuh Manager  
+**Focus:** Local telemetry, alert generation and security-event visibility
 
----
+## 1. Objective
 
-## 🔹 Step 1: Check Wazuh Manager Status
-Make sure the manager is running:
+The objective was to understand how Wazuh can monitor activity on the same system hosting the Wazuh Manager, generate local security events, and expose those events through its alert files and logs.
+
+## 2. Verify the Wazuh Manager
 
 ```bash
 sudo systemctl status wazuh-manager
 ```
 
-If it’s stopped:
+If required:
 
 ```bash
 sudo systemctl start wazuh-manager
 sudo systemctl enable wazuh-manager
 ```
 
----
+## 3. Inspect the Local Monitoring Context
 
-## 🔹 Step 2: Verify Local Agent
-List active agents (notice `000` is the local agent):
+The Wazuh command-line tooling can be used to inspect the local monitoring/agent state:
 
 ```bash
 sudo /var/ossec/bin/agent_control -l
 ```
 
-![Local Agent](../Screenshots/Day4_Local_Agent.png)  
+![Local monitoring state](../Screenshots/Day4_Local_Agent.png)
 
----
+## 4. Generate Controlled Local Events
 
-## 🔹 Step 3: Trigger Alerts Locally
+The lab generated several types of activity so that the resulting telemetry could be inspected.
 
-### ✅ a) File Monitoring
-Create and edit a test file:
+### File activity
+
 ```bash
 sudo touch /etc/test_wazuh_file
-sudo echo "Wazuh test alert" >> /etc/test_wazuh_file
+sudo sh -c 'echo "Wazuh test alert" >> /etc/test_wazuh_file'
 ```
 
----
+### Sudo activity
 
-### ✅ b) Sudo Command Usage
-Wazuh monitors `sudo` activity:
 ```bash
 sudo ls /root
 sudo cat /var/log/auth.log
 ```
 
----
+### USB / kernel activity
 
-### ✅ c) USB Device Detection
-Plug in a USB and check kernel logs:
+A USB device was connected during the exercise and the kernel log was inspected:
+
 ```bash
 dmesg | tail
 ```
 
----
+> The `dmesg` command itself is evidence collection. Whether a USB event generates a Wazuh alert depends on the configured collection and detection rules; it should not automatically be assumed that every kernel event becomes an alert.
 
-### ✅ d) Log Activity
-Add text into syslog:
+### Log activity
+
+To append a test message to syslog while ensuring that the shell redirection is performed with appropriate privileges:
+
 ```bash
-sudo echo "Testing log alert" >> /var/log/syslog
+printf '%s\n' 'Testing log alert' | sudo tee -a /var/log/syslog > /dev/null
 ```
 
----
+## 5. Observe Wazuh Alerts
 
-## 🔹 Step 4: Monitor Alerts in Real-Time
-Alerts are stored in JSON format:
+Wazuh alert data can be inspected in JSON form:
 
 ```bash
 sudo tail -f /var/ossec/logs/alerts/alerts.json
 ```
 
-![JSON File Alerts](../Screenshots/Day4_json_file.png)  
+![JSON alerts](../Screenshots/Day4_json_file.png)
 
----
+Wazuh internal operational logs can be inspected separately:
 
-## 🔹 Step 5: Check Wazuh Internal Logs
-View internal manager + agent activity:
 ```bash
 sudo tail -f /var/ossec/logs/ossec.log
 ```
 
----
+The distinction is useful during troubleshooting:
 
-## ✅ Summary
-- Wazuh Manager has a **built-in local agent (000)**.  
-- I triggered events with:
-  - File changes  
-  - Sudo commands  
-  - USB connection  
-  - Log activity  
-- I monitored alerts in:
-  - `alerts.json` → actual security alerts  
-  - `ossec.log` → internal manager/agent logs  
-- This helped me understand how Wazuh monitors activity **without deploying extra agents**.  
+- `alerts.json` contains generated security alerts.
+- `ossec.log` contains Wazuh manager/agent operational messages.
 
-Next step 👉 I will install a **VM** and deploy Wazuh agents on other machines to simulate a real SOC environment.  
+## 6. Analysis
+
+The exercise demonstrated a basic defensive loop:
+
+```text
+Generate controlled activity
+          ↓
+Collect host telemetry
+          ↓
+Wazuh analysis / rules
+          ↓
+Security alert
+          ↓
+Inspect evidence
+```
+
+This is the same general workflow used in later case studies, where the generated activity becomes more specific—for example, SSH authentication failures and brute-force behavior.
+
+## 7. What I Learned
+
+- How to verify Wazuh Manager status.
+- Where Wazuh stores alert and operational log information.
+- How controlled host activity can be used to validate monitoring.
+- Why generating test data and observing the resulting telemetry is useful when learning detection engineering.
+- Why a command that creates system activity should not automatically be treated as proof that a SIEM detection fired; the resulting alert must be verified.
+
+## 8. Evidence
+
+![Local monitoring](../Screenshots/Day4_Local_Agent.png)
+
+![Wazuh JSON alerts](../Screenshots/Day4_json_file.png)
+
+## 9. Next Stage
+
+This local exercise provided the foundation for testing Wazuh against additional endpoints and more realistic attack simulations, which are documented in the later case studies.
