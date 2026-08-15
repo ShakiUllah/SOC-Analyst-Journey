@@ -1,65 +1,92 @@
-# Project: Advanced Wazuh Rule & Decoder Development
+# Project: Wazuh Rule & Decoder Development
 
-> This document details the process of developing, testing, and debugging custom rules and decoders for the Wazuh SIEM. The objective was to move beyond default detections and create tailored rules to identify specific, high-fidelity threat indicators.
+> A hands-on detection-engineering investigation focused on creating, debugging, and validating custom Wazuh rules and decoders for SSH and Apache web-server activity.
 
----
+## 🎯 Objective
 
-### 🎯 Objective
-To enhance the detection capabilities of a deployed Wazuh server by creating custom rules for specific SSH and Apache web server threats.
+The objective was to move beyond default SIEM detections and build tailored, testable detections for:
 
----
+1. Failed SSH authentication from a specified source IP.
+2. Suspicious access to a `login.php` endpoint.
+3. Path-traversal attempts targeting `/etc/passwd`.
 
-### 📜 The Custom Rules
+The work was performed in an authorized lab environment.
 
-Three custom rules were developed in `/var/ossec/etc/rules/local_rules.xml`:
-1.  **Rule 100001:** To detect a failed SSH login from a specific, known-malicious IP address (`1.1.1.1`).
-2.  **Rule 100100:** To detect suspicious access to a `login.php` page on an Apache web server.
-3.  **Rule 100101:** To detect a common web attack technique, Path Traversal, specifically looking for attempts to access `/etc/passwd`.
+## 🧪 Environment
 
----
+- **SIEM:** Wazuh
+- **Operating environment:** Linux
+- **Log sources:** SSH and Apache/web-server logs
+- **Testing:** `wazuh-logtest` plus controlled log injection in the lab
+- **Configuration:** `local_rules.xml` and `local_decoder.xml`
 
-### 🔧 The Troubleshooting & Debugging Process
+## 🔎 Initial Detection Problem
 
-Initial testing using the `wazuh-logtest` utility revealed that two of the three rules were not firing as expected. This initiated a deep-dive troubleshooting process.
+During testing, two custom detections did not behave as expected.
 
-1.  **SSH Rule Failure (`100001`):** The `wazuh-logtest` output showed `No decoder matched` for the sample SSH log. This indicated that the Wazuh analysis engine did not understand the log format, preventing it from ever being checked against the custom rule.
-2.  **Path Traversal Rule Failure (`100101`):** The test for this rule triggered a built-in, lower-priority rule (`31101`) but not the intended custom rule. The root cause was an incorrect parent rule definition (`<if_sid>31108</if_sid>`) that did not match the log's characteristics.
+### SSH detection — Rule 100001
 
----
+`wazuh-logtest` returned **No decoder matched** for the sample SSH event. The problem was therefore upstream of the rule itself: the analysis engine was not parsing the event into the fields required by the custom rule.
 
-### 💡 The Solution: A Custom Decoder & Rule Logic Fix
+### Path traversal — Rule 100101
 
-The issues were resolved with two precise fixes:
+The test event triggered an existing lower-priority rule (`31101`) instead of the intended custom detection. Investigation showed that the custom rule used an inappropriate parent rule (`<if_sid>31108</if_sid>`).
 
-1.  **A New Custom Decoder:** A new decoder was created in `/var/ossec/etc/decoders/local_decoder.xml` to specifically parse the "Failed password" log format, correctly extracting the source IP and username.
-    ```xml
-    <decoder name="sshd-custom">
-      <parent>sshd</parent>
-      <prematch>Failed password for</prematch>
-      <regex>Failed password for \S+ user (\S+) from (\S+)</regex>
-      <order>user, srcip</order>
-    </decoder>
-    ```
-2.  **Corrected Rule Logic:** The path traversal rule (`100101`) was modified to inherit from a more general parent rule (`<if_sid>31100</if_sid>`), ensuring it would be evaluated correctly.
+This distinction is important in detection engineering: a rule can be syntactically valid but logically unreachable for the event it is intended to detect.
 
----
+## 🔧 Solution
 
-### ✅ Verification
+### 1. Custom decoder
 
-After restarting the Wazuh manager, both fixes were verified.
-- The `wazuh-logtest` utility confirmed that all three custom rules now trigger correctly on their respective sample logs.
-- A live, end-to-end test was performed by injecting a malicious log into the server's `/var/log/syslog`, which successfully generated the custom `100101` alert in the Wazuh dashboard.
+A local decoder was created to parse the relevant `Failed password` SSH log format and extract the username and source IP:
 
-*_(Evidence: The live alert for Rule 100101 appearing in the Wazuh Security Events dashboard.)*_
-- ![Custom_rules](../Screenshots/Day10_custom_rules1.png)  
-- ![Custom_rules](../Screenshots/Day10_custom_rules2.png)  
-- ![Dashboard_Events](../Screenshots/Day10_results.png)  
+```xml
+<decoder name="sshd-custom">
+  <parent>sshd</parent>
+  <prematch>Failed password for</prematch>
+  <regex>Failed password for \S+ user (\S+) from (\S+)</regex>
+  <order>user, srcip</order>
+</decoder>
+```
 
----
+### 2. Corrected rule inheritance
 
-### 🎓 Key Skills Demonstrated
-- **Wazuh Rule Development:** Writing custom rules with specific `match`, `srcip`, and `if_sid` conditions.
-- **Wazuh Decoder Development:** Creating custom decoders to parse logs not covered by the default ruleset.
-- **XML Syntax Debugging:** Using `xmllint` to validate and correct file structure.
-- **SIEM Testing & Validation:** Using `wazuh-logtest` to perform unit tests on rules and decoders.
-- **Live End-to-End Testing:** Confirming rule functionality within the live SIEM dashboard.
+The path-traversal detection was changed to inherit from a more appropriate parent rule (`31100`) so that the intended event could reach the custom rule logic.
+
+## ✅ Validation
+
+The changes were tested with `wazuh-logtest` and then validated with a controlled live event in the authorized lab.
+
+The final testing confirmed that the intended custom detections could trigger and that the path-traversal rule generated the expected Wazuh security event.
+
+Evidence from the original investigation is retained in the repository screenshots.
+
+## 🧠 What I Learned
+
+This investigation demonstrated several practical detection-engineering concepts:
+
+- **Parsing comes before matching.** If the decoder does not understand an event, a rule cannot reliably evaluate the required fields.
+- **Rule hierarchy matters.** Wazuh rules can depend on parent-rule conditions, so incorrect inheritance can prevent a valid detection from firing.
+- **Detection development needs validation.** A rule should be tested with representative events rather than assumed to work because the XML is syntactically valid.
+- **Live validation matters.** A successful `wazuh-logtest` result should be followed by an end-to-end test when practical.
+
+## 🛡️ Security Context
+
+The SSH and path-traversal scenarios represent common indicators that a SOC may investigate. In a production environment, these detections would also require tuning for the organization's normal traffic and authentication patterns to reduce false positives.
+
+## 📸 Evidence
+
+- ![Custom rules](../Screenshots/Day10_custom_rules1.png)
+- ![Custom rules](../Screenshots/Day10_custom_rules2.png)
+- ![Dashboard events](../Screenshots/Day10_results.png)
+
+## 🎓 Skills Demonstrated
+
+- Wazuh rule development
+- Wazuh decoder development
+- XML configuration and debugging
+- Log parsing
+- Detection logic and rule inheritance
+- SIEM testing with `wazuh-logtest`
+- Controlled end-to-end validation
+- Technical documentation
