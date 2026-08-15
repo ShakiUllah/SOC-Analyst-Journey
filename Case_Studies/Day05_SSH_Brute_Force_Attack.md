@@ -1,49 +1,98 @@
 # Case Study: Detection of a Simulated SSH Brute-Force Attack
 
-## Summary
+## 1. Summary
 
-On September 8, 2025, a simulated SSH brute-force attack was launched against a host monitored by a Wazuh SIEM. The SIEM successfully detected the activity, generating critical alerts for both the initial brute-force attempt (Rule ID 5712) and the subsequent successful login (Rule ID 5716), indicating a full compromise of the user account.
+On September 8, 2025, I performed a controlled SSH brute-force simulation against a local environment monitored by **Wazuh SIEM**. The exercise used **Hydra** to generate authentication attempts and evaluated whether Wazuh could detect the resulting activity.
 
-## Tools Used
+The test produced two important detections: a brute-force alert (**Rule ID 5712**) and a subsequent alert for multiple authentication failures followed by a successful login (**Rule ID 5716**).
 
-* **Wazuh SIEM:** For security monitoring, log analysis, and alerting.
-* **Hydra:** For simulating the brute-force attack.
-* **OpenSSH Server:** The target service.
+> **Scope:** This was a local, controlled security exercise. The target and source were both `127.0.0.1`.
 
-## Analysis and Timeline
+## 2. Objective
 
-The exercise was conducted to test the detection capabilities of the Wazuh SIEM against a common threat vector.
+- Generate controlled SSH authentication failures.
+- Determine whether Wazuh detects the resulting pattern.
+- Examine the relationship between raw authentication events and SIEM alerts.
+- Understand how a successful login following repeated failures changes the security significance of the event.
 
-**1. Attack Simulation:**
-[cite_start]At approximately 16:05 PM PKT on September 8, 2025, a brute-force attack was initiated using Hydra against the user 'shakir' on the local machine. The attack utilized a small, custom password list.
+## 3. Tools and Environment
 
-* **Evidence of Attack:**
-    ## 📷 Screenshot
-- ![Attack Simulation](../Screenshots/Day5_Attack_Simulation.png)  
+| Component | Purpose |
+|---|---|
+| **Wazuh SIEM** | Log collection, correlation, detection and alerting |
+| **Hydra** | Controlled generation of SSH password-guessing attempts |
+| **OpenSSH** | Target authentication service |
 
-**2. Initial Brute-Force Detection:**
-Immediately following the attack, Wazuh began correlating the multiple failed login attempts. This triggered a Level 10 alert **(Rule ID: 5712)** for an "SSHD brute-force attack," indicating a potential security risk.
+## 4. Attack Simulation
 
-* **Evidence of Initial Detection:**
- ## 📷 Screenshot
-- ![Wazuh Alert](../Screenshots/Day5_WAZUH_ALERT.png)  
+At approximately **16:05 PKT on September 8, 2025**, Hydra was used against the local SSH service for the account `shakir` with a small custom password list.
 
-**3. Critical Alert - Successful Compromise:**
-[cite_start]At 16:17 PM PKT, Wazuh escalated the event by triggering a Level 12 alert **(Rule ID: 5716)** for "Multiple authentication failures followed by a success." This critical alert confirmed that the simulated attacker's attempts were not only detected but had resulted in a successful login, representing a compromised account.
+![Attack simulation](../Screenshots/Day5_Attack_Simulation.png)
 
-* **Evidence of Compromise:**
-    ## 📷 Screenshot 
-- ![Successful Compromise](../Screenshots/Day5_WAZUH_ALERT2.png)  
+The purpose was not to compromise an external system, but to create realistic authentication telemetry that could be observed by the SIEM.
 
-## Indicators of Compromise (IoCs)
+## 5. Detection Timeline
 
-The following forensic evidence was collected from the alerts:
+### Stage 1 — Brute-force detection
 
-* **Attacker IP Address:** `127.0.0.1`
-* **Target Username:** `shakir`
-* **Target Service:** SSH (Port 22)
-* **Key Wazuh Rule IDs:** `5712`, `5716`
+Wazuh correlated repeated failed SSH authentication attempts and generated a **Level 10 alert, Rule ID 5712**, identifying an SSH brute-force pattern.
 
-## Conclusion
+![Initial Wazuh alert](../Screenshots/Day5_WAZUH_ALERT.png)
 
-The Wazuh SIEM performed effectively, successfully detecting and alerting on a simulated SSH brute-force attack. The correlation of multiple failed logins into a single brute-force alert, and the further escalation upon a successful login, demonstrates a mature detection capability for this common threat vector. This exercise validates the lab environment's ability to identify and escalate credential-based attacks in near real-time.
+### Stage 2 — Authentication success after failures
+
+At approximately **16:17 PKT**, Wazuh generated a **Level 12 alert, Rule ID 5716**, for multiple authentication failures followed by a successful login.
+
+![Successful authentication alert](../Screenshots/Day5_WAZUH_ALERT2.png)
+
+This is more significant than isolated failed logins because a successful authentication after repeated failures can indicate that a guessed credential was accepted. In this lab, that success was part of the controlled simulation.
+
+## 6. Evidence / Indicators
+
+| Indicator | Observed value |
+|---|---|
+| Source address | `127.0.0.1` |
+| Target username | `shakir` |
+| Service | SSH / TCP 22 |
+| Brute-force rule | `5712` |
+| Failure-then-success rule | `5716` |
+
+## 7. Analysis
+
+The exercise demonstrates a useful SOC detection sequence:
+
+```text
+Repeated authentication failures
+            ↓
+      SIEM correlation
+            ↓
+   Brute-force alert
+            ↓
+Successful authentication
+            ↓
+Higher-priority investigation
+```
+
+The important lesson is that **context and event correlation are more useful than treating every failed login as an independent incident**. A mature monitoring workflow can combine multiple events and escalate when the sequence becomes more suspicious.
+
+For a production environment, an analyst would normally investigate the source, account, timing, successful session, surrounding commands/events, and whether the account or endpoint showed additional signs of compromise.
+
+## 8. What I Learned
+
+- How authentication failures appear as SIEM telemetry.
+- How Wazuh correlates repeated failed SSH attempts.
+- How alert severity can change when a successful authentication follows failures.
+- Why event correlation is important for SOC investigations.
+- How controlled attack simulation can be used to validate defensive detections.
+
+## 9. MITRE ATT&CK Context
+
+The simulated behavior is consistent with **T1110 — Brute Force**, specifically password-guessing behavior. The ATT&CK mapping is used here to describe the simulated behavior, not to claim an external real-world incident.
+
+## 10. Limitations
+
+This experiment was conducted locally, so the source address was `127.0.0.1`. The small password list and controlled environment also do not represent the scale or noise of a production attack.
+
+## 11. Conclusion
+
+The exercise successfully demonstrated that Wazuh could identify the simulated SSH brute-force pattern and escalate the subsequent failure-then-success sequence. More importantly, it provided a practical example of how a SOC analyst can move from raw authentication events to correlated alerts and then to investigation.
